@@ -1,0 +1,14 @@
+2024-05-17 11:01:59,979 INFO Initial blacklisted packages: 
+2024-05-17 11:01:59,980 INFO Initial whitelisted packages: 
+2024-05-17 11:01:59,980 INFO Starting unattended upgrades script
+2024-05-17 11:01:59,980 INFO Allowed origins are: o=Ubuntu,a=bionic, o=Ubuntu,a=bionic-security, o=UbuntuESMApps,a=bionic-apps-security, o=UbuntuESM,a=bionic-infra-security
+2024-05-17 11:02:05,592 WARNING SIGTERM received, will stop
+2024-05-17 11:02:07,026 WARNING SIGNAL received, stopping
+2024-05-17 11:02:08,418 INFO Initial blacklisted packages: 
+2024-05-17 11:02:08,419 INFO Initial whitelisted packages: 
+2024-05-17 11:02:08,419 INFO Starting unattended upgrades script
+2024-05-17 11:02:08,419 INFO Allowed origins are: o=Ubuntu,a=bionic, o=Ubuntu,a=bionic-security, o=UbuntuESMApps,a=bionic-apps-security, o=UbuntuESM,a=bionic-infra-security
+2024-05-17 11:02:08,569 WARNING SIGTERM received, will stop
+2024-05-17 11:02:11,590 WARNING SIGTERM received, will stop
+2024-05-17 11:02:14,583 WARNING SIGTERM received, will stop
+2024-05-17 11:02:15,420 WARNING SIGNAL received, stopping

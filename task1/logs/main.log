@@ -1,0 +1,838 @@
+2024-05-17 11:43:17,615 INFO Using config files '['./DistUpgrade.cfg.bionic', '/etc/update-manager/release-upgrades.d/ubuntu-advantage-upgrades.cfg']'
+2024-05-17 11:43:17,615 INFO uname information: 'Linux workstation 5.4.0-150-generic #167~18.04.1-Ubuntu SMP Wed May 24 00:51:42 UTC 2023 x86_64'
+2024-05-17 11:43:18,214 INFO apt version: '1.6.17'
+2024-05-17 11:43:18,214 INFO python version: '3.6.9 (default, Mar 10 2023, 16:46:00) 
+[GCC 8.4.0]'
+2024-05-17 11:43:18,219 INFO release-upgrader version '20.04.40' started
+2024-05-17 11:43:18,233 INFO locale: 'en_IN' 'ISO8859-1'
+2024-05-17 11:43:18,343 INFO screen could not be run
+2024-05-17 11:43:18,543 DEBUG Using 'DistUpgradeViewText' view
+2024-05-17 11:43:18,616 DEBUG enable dpkg --force-overwrite
+2024-05-17 11:43:18,692 DEBUG creating statefile: '/var/log/dist-upgrade/apt-clone_system_state.tar.gz'
+2024-05-17 11:43:24,444 DEBUG lsb-release: 'bionic'
+2024-05-17 11:43:24,445 DEBUG _pythonSymlinkCheck run
+2024-05-17 11:43:24,470 DEBUG openCache()
+2024-05-17 11:43:24,471 DEBUG quirks: running PreCacheOpen
+2024-05-17 11:43:24,471 DEBUG running Quirks.PreCacheOpen
+2024-05-17 11:43:27,354 DEBUG Comparing 5.4.0-113 with 
+2024-05-17 11:43:27,358 DEBUG Comparing 5.4.0-150 with 5.4.0-113
+2024-05-17 11:43:28,108 DEBUG /openCache(), new cache size 116397
+2024-05-17 11:43:28,108 DEBUG need_server_mode(): run in 'desktop' mode, (because of pkg 'ubuntu-desktop')
+2024-05-17 11:43:28,108 DEBUG checkViewDepends()
+2024-05-17 11:43:28,158 DEBUG running doUpdate() (showErrors=False)
+2024-05-17 11:43:32,443 DEBUG openCache()
+2024-05-17 11:43:34,649 DEBUG Comparing 5.4.0-113 with 
+2024-05-17 11:43:34,650 DEBUG Comparing 5.4.0-150 with 5.4.0-113
+2024-05-17 11:43:35,165 DEBUG /openCache(), new cache size 116397
+2024-05-17 11:43:35,165 DEBUG doPostInitialUpdate
+2024-05-17 11:43:35,165 DEBUG quirks: running focalPostInitialUpdate
+2024-05-17 11:43:35,165 DEBUG running Quirks.focalPostInitialUpdate
+2024-05-17 11:43:38,270 WARNING error reading deb2snap.json file (Expected a string or a pair of strings)
+2024-05-17 11:43:38,659 DEBUG Snap core18 is installed
+2024-05-17 11:43:38,941 DEBUG Snap gnome-3-34-1804 is installed
+2024-05-17 11:43:39,255 DEBUG Snap gtk-common-themes is installed
+2024-05-17 11:43:40,019 DEBUG Snap bare is installed
+2024-05-17 11:43:40,020 DEBUG Snap bare is not tracking the release channel
+2024-05-17 11:43:40,327 DEBUG Snap core20 is installed
+2024-05-17 11:43:40,327 DEBUG Snap core20 is not tracking the release channel
+2024-05-17 11:43:40,653 DEBUG Snap core22 is installed
+2024-05-17 11:43:40,654 DEBUG Snap core22 is not tracking the release channel
+2024-05-17 11:43:41,145 DEBUG Snap gnome-3-38-2004 is installed
+2024-05-17 11:43:41,146 DEBUG Snap gnome-3-38-2004 is not tracking the release channel
+2024-05-17 11:43:41,553 DEBUG Snap gnome-42-2204 is installed
+2024-05-17 11:43:41,553 DEBUG Snap gnome-42-2204 is not tracking the release channel
+2024-05-17 11:43:41,913 DEBUG Snap gnome-calculator is installed
+2024-05-17 11:43:42,256 DEBUG Snap gnome-characters is installed
+2024-05-17 11:43:42,575 DEBUG Snap gnome-logs is installed
+2024-05-17 11:43:42,879 DEBUG Snap gnome-system-monitor is installed
+2024-05-17 11:43:43,297 DEBUG Snap snapd is installed
+2024-05-17 11:43:43,297 DEBUG Snap snapd is not tracking the release channel
+2024-05-17 11:43:47,724 DEBUG MetaPkgs: ubuntu-desktop
+2024-05-17 11:43:52,143 DEBUG Foreign: google-chrome-stable
+2024-05-17 11:43:52,143 DEBUG Obsolete: zoom
+2024-05-17 11:43:52,143 DEBUG updateSourcesList()
+2024-05-17 11:43:52,152 DEBUG rewriteSourcesList() with mirror_check
+2024-05-17 11:43:52,152 DEBUG ['ubuntu-minimal', 'ubuntu-standard']
+2024-05-17 11:43:52,152 DEBUG Checking pkg: ubuntu-minimal
+2024-05-17 11:43:52,155 DEBUG Checking pkg: ubuntu-standard
+2024-05-17 11:43:52,159 DEBUG examining: 'deb http://in.archive.ubuntu.com/ubuntu/ bionic main restricted'
+2024-05-17 11:43:52,159 DEBUG verifySourcesListEntry: deb http://in.archive.ubuntu.com/ubuntu/ focal main restricted
+2024-05-17 11:43:52,159 DEBUG url_downloadable: http://in.archive.ubuntu.com/ubuntu//dists/focal/Release
+2024-05-17 11:43:52,159 DEBUG s='http' n='in.archive.ubuntu.com' p='/ubuntu//dists/focal/Release' q='' f=''
+2024-05-17 11:43:52,600 DEBUG entry 'deb http://in.archive.ubuntu.com/ubuntu/ focal main restricted' updated to new dist
+2024-05-17 11:43:52,601 DEBUG examining: 'deb http://in.archive.ubuntu.com/ubuntu/ bionic-updates main restricted'
+2024-05-17 11:43:52,602 DEBUG entry 'deb http://in.archive.ubuntu.com/ubuntu/ focal-updates main restricted' updated to new dist
+2024-05-17 11:43:52,602 DEBUG examining: 'deb http://in.archive.ubuntu.com/ubuntu/ bionic universe'
+2024-05-17 11:43:52,603 DEBUG entry 'deb http://in.archive.ubuntu.com/ubuntu/ focal universe' updated to new dist
+2024-05-17 11:43:52,603 DEBUG examining: 'deb http://in.archive.ubuntu.com/ubuntu/ bionic-updates universe'
+2024-05-17 11:43:52,603 DEBUG entry 'deb http://in.archive.ubuntu.com/ubuntu/ focal-updates universe' updated to new dist
+2024-05-17 11:43:52,603 DEBUG examining: 'deb http://in.archive.ubuntu.com/ubuntu/ bionic multiverse'
+2024-05-17 11:43:52,604 DEBUG entry 'deb http://in.archive.ubuntu.com/ubuntu/ focal multiverse' updated to new dist
+2024-05-17 11:43:52,604 DEBUG examining: 'deb http://in.archive.ubuntu.com/ubuntu/ bionic-updates multiverse'
+2024-05-17 11:43:52,604 DEBUG entry 'deb http://in.archive.ubuntu.com/ubuntu/ focal-updates multiverse' updated to new dist
+2024-05-17 11:43:52,604 DEBUG examining: 'deb http://in.archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse'
+2024-05-17 11:43:52,605 DEBUG entry 'deb http://in.archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse' updated to new dist
+2024-05-17 11:43:52,605 DEBUG examining: 'deb http://archive.canonical.com/ubuntu bionic partner'
+2024-05-17 11:43:52,605 DEBUG verifySourcesListEntry: deb http://archive.canonical.com/ubuntu focal partner
+2024-05-17 11:43:52,605 DEBUG url_downloadable: http://archive.canonical.com/ubuntu/dists/focal/Release
+2024-05-17 11:43:52,605 DEBUG s='http' n='archive.canonical.com' p='/ubuntu/dists/focal/Release' q='' f=''
+2024-05-17 11:43:53,112 DEBUG entry 'deb http://archive.canonical.com/ubuntu focal partner' updated to new dist
+2024-05-17 11:43:53,113 DEBUG examining: 'deb-src http://archive.canonical.com/ubuntu bionic partner'
+2024-05-17 11:43:53,113 DEBUG entry 'deb-src http://archive.canonical.com/ubuntu focal partner' updated to new dist
+2024-05-17 11:43:53,113 DEBUG examining: 'deb http://security.ubuntu.com/ubuntu bionic-security main restricted'
+2024-05-17 11:43:53,114 DEBUG verifySourcesListEntry: deb http://security.ubuntu.com/ubuntu focal main restricted
+2024-05-17 11:43:53,114 DEBUG url_downloadable: http://security.ubuntu.com/ubuntu/dists/focal/Release
+2024-05-17 11:43:53,114 DEBUG s='http' n='security.ubuntu.com' p='/ubuntu/dists/focal/Release' q='' f=''
+2024-05-17 11:43:53,624 DEBUG entry 'deb http://security.ubuntu.com/ubuntu focal-security main restricted' updated to new dist
+2024-05-17 11:43:53,624 DEBUG examining: 'deb http://security.ubuntu.com/ubuntu bionic-security universe'
+2024-05-17 11:43:53,625 DEBUG entry 'deb http://security.ubuntu.com/ubuntu focal-security universe' updated to new dist
+2024-05-17 11:43:53,625 DEBUG examining: 'deb http://security.ubuntu.com/ubuntu bionic-security multiverse'
+2024-05-17 11:43:53,625 DEBUG entry 'deb http://security.ubuntu.com/ubuntu focal-security multiverse' updated to new dist
+2024-05-17 11:43:53,625 DEBUG examining: 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main'
+2024-05-17 11:43:53,629 DEBUG entry '# deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main # disabled on upgrade to focal' was disabled (unknown mirror)
+2024-05-17 11:43:57,324 DEBUG running doUpdate() (showErrors=True)
+2024-05-17 11:44:46,678 DEBUG openCache()
+2024-05-17 11:44:48,004 DEBUG Comparing 5.4.0-113 with 
+2024-05-17 11:44:48,005 DEBUG Comparing 5.4.0-150 with 5.4.0-113
+2024-05-17 11:44:48,519 DEBUG /openCache(), new cache size 96456
+2024-05-17 11:44:48,520 DEBUG need_server_mode(): run in 'desktop' mode, (because of pkg 'ubuntu-desktop')
+2024-05-17 11:44:48,520 DEBUG quirks: running PreDistUpgradeCache
+2024-05-17 11:44:48,520 DEBUG running Quirks.PreDistUpgradeCache
+2024-05-17 11:44:48,520 INFO checking for python-dbg (auto_inst=False)
+2024-05-17 11:44:48,521 INFO checking for python-doc (auto_inst=False)
+2024-05-17 11:44:48,521 INFO checking for python-minimal (auto_inst=False)
+2024-05-17 11:44:48,521 INFO checking for python-dev (auto_inst=False)
+2024-05-17 11:44:48,521 INFO checking for libpython-dev (auto_inst=False)
+2024-05-17 11:44:48,521 INFO checking for libpython-stdlib (auto_inst=False)
+2024-05-17 11:44:48,521 INFO checking for libpython-dbg (auto_inst=False)
+2024-05-17 11:44:48,521 INFO checking for python-dbg (auto_inst=True)
+2024-05-17 11:44:48,521 INFO checking for python-doc (auto_inst=True)
+2024-05-17 11:44:48,521 INFO checking for python-minimal (auto_inst=True)
+2024-05-17 11:44:48,521 INFO checking for python-dev (auto_inst=True)
+2024-05-17 11:44:48,521 INFO checking for libpython-dev (auto_inst=True)
+2024-05-17 11:44:48,521 INFO checking for libpython-stdlib (auto_inst=True)
+2024-05-17 11:44:48,521 INFO checking for libpython-dbg (auto_inst=True)
+2024-05-17 11:44:51,813 DEBUG Running KeepInstalledSection rules
+2024-05-17 11:44:53,474 DEBUG Kernel uname: '5.4.0-150-generic' 
+2024-05-17 11:44:53,504 DEBUG nvidiaUpdate()
+2024-05-17 11:44:55,333 INFO no old nvidia driver installed, installing no new
+2024-05-17 11:44:55,334 DEBUG Removing 'gnome-cups-manager' (ubuntu-desktop PostUpgradeRemove rule)
+2024-05-17 11:44:55,334 DEBUG Removing 'powermanagement-interface' (ubuntu-desktop PostUpgradeRemove rule)
+2024-05-17 11:44:55,334 DEBUG Removing 'deskbar-applet' (ubuntu-desktop PostUpgradeRemove rule)
+2024-05-17 11:44:55,334 DEBUG Removing 'nautilus-cd-burner' (ubuntu-desktop PostUpgradeRemove rule)
+2024-05-17 11:44:55,335 DEBUG quirks: running PostDistUpgradeCache
+2024-05-17 11:44:55,335 DEBUG running Quirks.PostDistUpgradeCache
+2024-05-17 11:44:55,870 DEBUG Comparing 5.4.0-113 with 
+2024-05-17 11:44:55,871 DEBUG Comparing 5.4.0-150 with 5.4.0-113
+2024-05-17 11:44:55,871 DEBUG Comparing 5.4.0-182 with 5.4.0-150
+2024-05-17 11:44:56,341 INFO installing linux metapackage: linux-generic
+2024-05-17 11:44:56,341 DEBUG Installing 'linux-generic' (linux metapackage may have been accidentally uninstalled)
+2024-05-17 11:44:56,342 DEBUG Marking 'ubuntu-desktop' for upgrade
+2024-05-17 11:44:57,287 DEBUG About to apply the following changes
+2024-05-17 11:44:58,449 DEBUG Keep at same version: adium-theme-ubuntu alsa-base apg branding-ubuntu command-not-found-data crda dmz-cursor-theme fonts-beng fonts-dejavu-core fonts-deva fonts-droid-fallback fonts-gargi fonts-gubbi fonts-guru fonts-kacst fonts-khmeros-core fonts-knda fonts-lao fonts-lklug-sinhala fonts-lohit-beng-assamese fonts-lohit-beng-bengali fonts-lohit-guru fonts-lohit-mlym fonts-lohit-orya fonts-lohit-taml fonts-lohit-taml-classical fonts-lohit-telu fonts-mlym fonts-nakula fonts-navilu fonts-orya fonts-pagul fonts-sahadeva fonts-samyak-deva fonts-samyak-gujr fonts-samyak-mlym fonts-samyak-taml fonts-sarai fonts-taml fonts-telu fonts-telu-extra fonts-tibetan-machine gir1.2-mutter-2 gnome-accessibility-themes gnome-themes-extra gnome-themes-extra-data google-chrome-stable grub-gfxpayload-lists gsettings-ubuntu-schemas gsfonts hicolor-icon-theme humanity-icon-theme iucode-tool kerneloops laptop-detect libao-common libao4 libasyncns0 libauthen-sasl-perl libbind9-160 libboost-date-time1.65.1 libboost-filesystem1.65.1 libboost-iostreams1.65.1 libboost-locale1.65.1 libboost-system1.65.1 libboost-thread1.65.1 libbrlapi0.6 libcamel-1.2-61 libcdio17 libcdparanoia0 libclass-accessor-perl libdata-dump-perl libdns-export1100 libdns1100 libdotconf0 libebook-contacts-1.2-2 libecal-1.2-19 libedataserver-1.2-23 libemail-valid-perl libencode-locale-perl libeot0 libestr0 libevent-2.1-6 libexempi3 libexiv2-14 libexttextcat-2.0-0 libexttextcat-data libfastjson4 libffi6 libfile-desktopentry-perl libfile-listing-perl libfont-afm-perl libgdbm5 libgnome-desktop-3-17 libgpm2 libgspell-1-1 libgutenprint2 libgweather-3-15 libhogweed4 libhtml-format-perl libhunspell-1.6-0 libicu60 libilmbase12 libio-html-perl libio-socket-inet6-perl libio-string-perl libip4tc0 libip6tc0 libirs160 libisc-export169 libisc169 libisccc160 libisccfg160 libisl19 libjpeg8 libjson-c3 liblouis14 liblouisutdml8 liblqr-1-0 liblwres160 libmagickcore-6.q16-3 libmagickcore-6.q16-3-extra libmagickwand-6.q16-3 libminiupnpc10 libmnl0 libmpc3 libmutter-2-0 libnet-domain-tld-perl libnet-smtp-ssl-perl libnetpbm10 libnettle6 libnih1 libntfs-3g88 libopenexr22 liborcus-0.13-0 libperl5.26 libplymouth4 libpoppler73 libprocps6 libprotobuf10 libpython3.6 libpython3.6-minimal libpython3.6-stdlib libqpdf21 libraw1394-11 libraw16 libreadline7 libssl1.0.0 libtext-levenshtein-perl libtie-ixhash-perl libtry-tiny-perl libusbmuxd4 libvpx5 libx11-protocol-perl libxaw7 libxcb-image0 libxcb-util1 libxfont2 libxml-namespacesupport-perl libxml-sax-base-perl libxml-xpathengine-perl libxrender1 libxshmfence1 libxt6 libxtst6 libxv1 linux-hwe-5.4-headers-5.4.0-104 linux-hwe-5.4-headers-5.4.0-113 linux-hwe-5.4-headers-5.4.0-150 linux-hwe-5.4-headers-5.4.0-42 linux-hwe-5.4-headers-5.4.0-53 linux-hwe-5.4-headers-5.4.0-58 linux-hwe-5.4-headers-5.4.0-65 linux-hwe-5.4-headers-5.4.0-72 linux-hwe-5.4-headers-5.4.0-81 linux-sound-base lp-solve multiarch-support nautilus-share netpbm nplan patchutils perl-modules-5.26 pppoeconf printer-driver-pnm2ppa printer-driver-ptouch printer-driver-pxljr python-talloc python3.6 python3.6-minimal sound-theme-freedesktop ssl-cert syslinux-legacy time ubuntu-web-launchers ureadahead xbitmaps xfonts-scalable xfonts-utils xorg-docs-core xul-ext-ubufox zip zoom
+2024-05-17 11:44:58,449 DEBUG Upgradable, but held- back: 
+2024-05-17 11:44:58,449 DEBUG Remove: fwupdate-signed gnome-settings-daemon-schemas libapt-inst2.0 libapt-pkg5.0 libcupscgi1 libcupsmime1 libcupsppdc1 libebook-1.2-19 libedata-book-1.2-25 libedata-cal-1.2-28 libfwup1 libldb1 libpolkit-backend-1-0 libsensors4 libsnmp30 uno-libs3
+2024-05-17 11:44:58,449 DEBUG Install: alsa-topology-conf alsa-ucm-conf apt-config-icons-hidpi bind9-dnsutils bind9-libs build-essential cpp-9 docbook-xml dpkg-dev duplicity enchant-2 fakeroot fonts-smc-gayathri fonts-urw-base35 fonts-yrsa-rasa fprintd g++ g++-9 gamemode gcc gcc-10-base gcc-9 gcc-9-base gir1.2-clutter-1.0 gir1.2-clutter-gst-3.0 gir1.2-cogl-1.0 gir1.2-coglpango-1.0 gir1.2-graphene-1.0 gir1.2-gtkclutter-1.0 gir1.2-gtksource-4 gir1.2-mutter-6 gnome-calculator gnome-characters gnome-logs gnome-settings-daemon-common gnome-shell-extension-desktop-icons gnome-system-monitor guile-2.2-libs ibus-data libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl libamtk-5-0 libamtk-5-common libapt-pkg6.0 libargon2-1 libasan5 libasync-mergepoint-perl libatkmm-1.6-1v5 libatomic1 libatopology2 libb-hooks-endofscope-perl libb-hooks-op-check-perl libboost-date-time1.71.0 libboost-filesystem1.71.0 libboost-iostreams1.71.0 libboost-locale1.71.0 libboost-thread1.71.0 libbrlapi0.7 libc-dev-bin libc6-dev libcairomm-1.0-1v5 libcamel-1.2-62 libcapture-tiny-perl libcbor0.6 libcdio18 libclass-method-modifiers-perl libclass-xsaccessor-perl libcpanel-json-xs-perl libcrypt-dev libcrypt1 libctf-nobfd0 libctf0 libcue2 libcurl4 libdevel-callchecker-perl libdevel-size-perl libdigest-bubblebabble-perl libdns-export1109 libdynaloader-functions-perl libebook-1.2-20 libebook-contacts-1.2-3 libecal-2.0-1 libedata-book-1.2-26 libedata-cal-2.0-1 libedataserver-1.2-24 libenchant-2-2 libevent-2.1-7 libexempi8 libexiv2-27 libextutils-depends-perl libextutils-pkgconfig-perl libfakeroot libffi7 libfido2-1 libfile-find-rule-perl libfont-ttf-perl libfprint-2-2 libfuture-perl libfwupdplugin5 libgamemode0 libgamemodeauto0 libgcc-9-dev libgcc-s1 libgdbm6 libgif7 libglibmm-2.4-1v5 libgnome-desktop-3-19 libgpg-error-l10n libgsf-1-114 libgsf-1-common libgsound0 libgspell-1-2 libgssdp-1.2-0 libgtkmm-3.0-1v5 libgtksourceview-4-0 libgtksourceview-4-common libgupnp-1.2-0 libgupnp-av-1.0-2 libgupnp-dlna-2.0-3 libgutenprint-common libgutenprint9 libgweather-3-16 libhandy-0.0-0 libhogweed5 libhunspell-1.7-0 libicu66 libilmbase24 libimagequant0 libimport-into-perl libio-async-loop-epoll-perl libio-async-perl libio-stringy-perl libip4tc2 libip6tc2 libisc-export1105 libisl22 libitm1 libjcat1 libjson-c4 libjson-maybexs-perl libjuh-java libjurt-java libldb2 liblinux-epoll-perl liblist-compare-perl libllvm12 liblmdb0 liblouis20 liblouisutdml9 liblsan0 libmagickcore-6.q16-6 libmagickcore-6.q16-6-extra libmagickwand-6.q16-6 libmaxminddb0 libminiupnpc17 libmodule-implementation-perl libmodule-runtime-perl libmoo-perl libmoox-aliases-perl libmozjs-68-0 libmutter-6-0 libmysqlclient21 libnamespace-clean-perl libncurses6 libncursesw6 libnet-dns-sec-perl libnettle7 libnfs13 libnftnl11 libnl-route-3-200 libntfs-3g883 libnumber-compare-perl libopenexr24 libopengl0 libopenjp2-7 liborcus-0.15-0 libpackage-stash-perl libpackage-stash-xs-perl libpam-fprintd libpangomm-1.4-1v5 libparams-classify-perl libpath-tiny-perl libpcre2-32-0 libpcre2-8-0 libperl4-corelibs-perl libperl5.30 libpkcs11-helper1 libplymouth5 libpoppler-cpp0v5 libpoppler97 libprocps8 libprotobuf17 libpython3.8 libpython3.8-minimal libpython3.8-stdlib libqpdf26 libquadmath0 libraw19 libreadline8 libreadonly-perl libref-util-perl libref-util-xs-perl libreoffice-help-common libreoffice-style-colibre libreoffice-style-elementary libridl-java librole-tiny-perl librsync2 librygel-core-2.6-2 librygel-db-2.6-2 librygel-renderer-2.6-2 librygel-server-2.6-2 libsane libsensors-config libsensors5 libsereal-decoder-perl libsereal-encoder-perl libsereal-perl libsigc++-2.0-0v5 libsnmp35 libsoxr0 libstdc++-9-dev libstrictures-perl libstruct-dumb-perl libsub-exporter-progressive-perl libsub-identify-perl libsub-quote-perl libsynctex2 libtepl-4-0 libtest-fatal-perl libtest-refcount-perl libtext-glob-perl libtinfo6 libtracker-control-2.0-0 libtracker-miner-2.0-0 libtsan0 libtss2-esys0 libtype-tiny-perl libtype-tiny-xs-perl libubsan1 libuchardet0 libunicode-utf8-perl libuno-cppu3 libuno-cppuhelpergcc3-3 libuno-purpenvhelpergcc3-3 libuno-sal3 libuno-salhelpergcc3-3 libunoloader-java libusbmuxd6 libuv1 libvariable-magic-perl libvpx6 libxml-writer-perl libxmlb2 linux-generic linux-headers-5.4.0-113 linux-headers-5.4.0-150 linux-headers-5.4.0-182 linux-headers-5.4.0-182-generic linux-headers-generic linux-image-5.4.0-182-generic linux-image-generic linux-libc-dev linux-modules-5.4.0-182-generic linux-modules-extra-5.4.0-182-generic logsave lz4 make manpages-dev mesa-vulkan-drivers mysql-common network-manager-openvpn network-manager-openvpn-gnome openvpn pci.ids perl-modules-5.30 pkg-config plymouth-theme-spinner python3-bcrypt python3-blinker python3-distro python3-entrypoints python3-fasteners python3-future python3-ibus-1.0 python3-jwt python3-ldb python3-lib2to3 python3-lockfile python3-monotonic python3-oauthlib python3-paramiko python3-talloc python3.8 python3.8-minimal rygel sgml-base sgml-data switcheroo-control systemd-timesyncd tpm-udev tracker tracker-extract tracker-miner-fs ubuntu-desktop-minimal ubuntu-wallpapers-focal uno-libs-private usb.ids xdg-dbus-proxy xml-core xserver-xorg xserver-xorg-core xserver-xorg-input-all xserver-xorg-input-libinput xserver-xorg-input-wacom xserver-xorg-legacy xserver-xorg-video-all xserver-xorg-video-amdgpu xserver-xorg-video-ati xserver-xorg-video-fbdev xserver-xorg-video-intel xserver-xorg-video-nouveau xserver-xorg-video-qxl xserver-xorg-video-radeon xserver-xorg-video-vesa xserver-xorg-video-vmware yaru-theme-gnome-shell yaru-theme-gtk yaru-theme-icon yaru-theme-sound
+2024-05-17 11:44:58,450 DEBUG Upgrade: accountsservice acl acpi-support acpid adduser adwaita-icon-theme aisleriot alsa-utils amd64-microcode anacron app-install-data-partner apparmor apport apport-gtk apport-symptoms appstream apt apt-config-icons apt-utils aptdaemon aptdaemon-data apturl apturl-common aspell aspell-en at-spi2-core avahi-autoipd avahi-daemon avahi-utils baobab base-files base-passwd bash bash-completion bc bind9-host binutils binutils-common binutils-x86-64-linux-gnu bluez bluez-cups bluez-obexd bolt brltty bsdmainutils bsdutils bubblewrap busybox-initramfs busybox-static bzip2 ca-certificates cheese cheese-common colord colord-data command-not-found console-setup console-setup-linux coreutils cpio cpp cpp-7 cracklib-runtime cron cups cups-browsed cups-bsd cups-client cups-common cups-core-drivers cups-daemon cups-filters cups-filters-core-drivers cups-ipp-utils cups-pk-helper cups-ppdc cups-server-common dash dbus dbus-user-session dbus-x11 dc dconf-cli dconf-gsettings-backend dconf-service debconf debconf-i18n debianutils deja-dup desktop-file-utils dictionaries-common diffstat diffutils dirmngr distro-info distro-info-data dmidecode dmsetup dns-root-data dnsmasq-base dnsutils dosfstools dpkg e2fsprogs ed efibootmgr eject emacsen-common enchant eog espeak-ng-data evince evince-common evolution-data-server evolution-data-server-common example-content fdisk file file-roller findutils firefox firefox-locale-en fontconfig fontconfig-config fonts-beng-extra fonts-deva-extra fonts-freefont-ttf fonts-gujr fonts-gujr-extra fonts-guru-extra fonts-indic fonts-kacst-one fonts-kalapi fonts-liberation fonts-liberation2 fonts-lohit-deva fonts-lohit-gujr fonts-lohit-knda fonts-noto-cjk fonts-noto-color-emoji fonts-noto-mono fonts-opensymbol fonts-orya-extra fonts-sil-abyssinica fonts-sil-padauk fonts-smc fonts-smc-anjalioldlipi fonts-smc-chilanka fonts-smc-dyuthi fonts-smc-karumbi fonts-smc-keraleeyam fonts-smc-manjari fonts-smc-meera fonts-smc-rachana fonts-smc-raghumalayalamsans fonts-smc-suruma fonts-smc-uroob fonts-thai-tlwg fonts-tlwg-garuda fonts-tlwg-garuda-ttf fonts-tlwg-kinnari fonts-tlwg-kinnari-ttf fonts-tlwg-laksaman fonts-tlwg-laksaman-ttf fonts-tlwg-loma fonts-tlwg-loma-ttf fonts-tlwg-mono fonts-tlwg-mono-ttf fonts-tlwg-norasi fonts-tlwg-norasi-ttf fonts-tlwg-purisa fonts-tlwg-purisa-ttf fonts-tlwg-sawasdee fonts-tlwg-sawasdee-ttf fonts-tlwg-typewriter fonts-tlwg-typewriter-ttf fonts-tlwg-typist fonts-tlwg-typist-ttf fonts-tlwg-typo fonts-tlwg-typo-ttf fonts-tlwg-umpush fonts-tlwg-umpush-ttf fonts-tlwg-waree fonts-tlwg-waree-ttf fonts-ubuntu foomatic-db-compressed-ppds friendly-recovery ftp fuse fwupd fwupd-signed fwupdate gcc-7-base gcc-8-base gcr gdb gdbserver gdisk gdm3 gedit gedit-common genisoimage geoclue-2.0 geoip-database gettext gettext-base ghostscript ghostscript-x gir1.2-accountsservice-1.0 gir1.2-atk-1.0 gir1.2-atspi-2.0 gir1.2-dbusmenu-glib-0.4 gir1.2-dee-1.0 gir1.2-freedesktop gir1.2-gck-1 gir1.2-gcr-3 gir1.2-gdesktopenums-3.0 gir1.2-gdkpixbuf-2.0 gir1.2-gdm-1.0 gir1.2-geoclue-2.0 gir1.2-geocodeglib-1.0 gir1.2-glib-2.0 gir1.2-gmenu-3.0 gir1.2-gnomebluetooth-1.0 gir1.2-gnomedesktop-3.0 gir1.2-goa-1.0 gir1.2-gst-plugins-base-1.0 gir1.2-gstreamer-1.0 gir1.2-gtk-3.0 gir1.2-gtksource-3.0 gir1.2-gudev-1.0 gir1.2-gweather-3.0 gir1.2-ibus-1.0 gir1.2-javascriptcoregtk-4.0 gir1.2-json-1.0 gir1.2-nm-1.0 gir1.2-nma-1.0 gir1.2-notify-0.7 gir1.2-packagekitglib-1.0 gir1.2-pango-1.0 gir1.2-peas-1.0 gir1.2-polkit-1.0 gir1.2-rb-3.0 gir1.2-rsvg-2.0 gir1.2-secret-1 gir1.2-snapd-1 gir1.2-soup-2.4 gir1.2-totem-1.0 gir1.2-totemplparser-1.0 gir1.2-udisks-2.0 gir1.2-unity-5.0 gir1.2-upowerglib-1.0 gir1.2-vte-2.91 gir1.2-webkit2-4.0 gir1.2-wnck-3.0 gjs gkbd-capplet glib-networking glib-networking-common glib-networking-services gnome-bluetooth gnome-calendar gnome-control-center gnome-control-center-data gnome-control-center-faces gnome-desktop3-data gnome-disk-utility gnome-font-viewer gnome-getting-started-docs gnome-initial-setup gnome-keyring gnome-keyring-pkcs11 gnome-mahjongg gnome-menus gnome-mines gnome-online-accounts gnome-power-manager gnome-screenshot gnome-session-bin gnome-session-canberra gnome-session-common gnome-settings-daemon gnome-shell gnome-shell-common gnome-shell-extension-appindicator gnome-shell-extension-ubuntu-dock gnome-software gnome-software-common gnome-software-plugin-snap gnome-startup-applications gnome-sudoku gnome-terminal gnome-terminal-data gnome-todo gnome-todo-common gnome-user-docs gnome-user-guide gnome-video-effects gnupg gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client gpg-wks-server gpgconf gpgsm gpgv grep grilo-plugins-0.3-base groff-base grub-common grub-pc grub-pc-bin grub2-common gsettings-desktop-schemas gstreamer1.0-alsa gstreamer1.0-clutter-3.0 gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-packagekit gstreamer1.0-plugins-base gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-good gstreamer1.0-pulseaudio gstreamer1.0-tools gstreamer1.0-x gtk-update-icon-cache gtk2-engines-murrine gtk2-engines-pixbuf guile-2.0-libs gvfs gvfs-backends gvfs-bin gvfs-common gvfs-daemons gvfs-fuse gvfs-libs gzip hdparm hostname hplip hplip-data hunspell-en-us hyphen-en-us ibus ibus-gtk ibus-gtk3 ibus-table ifupdown iio-sensor-proxy im-config imagemagick imagemagick-6-common imagemagick-6.q16 info init init-system-helpers initramfs-tools initramfs-tools-bin initramfs-tools-core inputattach install-info intel-microcode intltool-debian ippusbxd iproute2 iptables iputils-arping iputils-ping iputils-tracepath irqbalance isc-dhcp-client isc-dhcp-common iso-codes iw kbd keyboard-configuration klibc-utils kmod krb5-locales language-pack-en language-pack-en-base language-pack-gnome-en language-pack-gnome-en-base language-selector-common language-selector-gnome less libaa1 libabw-0.1-1 libaccountsservice0 libacl1 libapparmor1 libappindicator3-1 libappstream-glib8 libappstream4 libapt-pkg-perl libarchive-zip-perl libarchive13 libargon2-0 libart-2.0-2 libasn1-8-heimdal libasound2 libasound2-data libasound2-plugins libaspell15 libassuan0 libatasmart4 libatk-adaptor libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatm1 libatspi2.0-0 libattr1 libaudio2 libaudit-common libaudit1 libavahi-client3 libavahi-common-data libavahi-common3 libavahi-core7 libavahi-glib1 libavahi-ui-gtk3-0 libavc1394-0 libbabeltrace1 libbinutils libblkid1 libblockdev-crypto2 libblockdev-fs2 libblockdev-loop2 libblockdev-part-err2 libblockdev-part2 libblockdev-swap2 libblockdev-utils2 libblockdev2 libbluetooth3 libbrotli1 libbsd0 libbz2-1.0 libc-bin libc6 libc6-dbg libcaca0 libcairo-gobject-perl libcairo-gobject2 libcairo-perl libcairo2 libcanberra-gtk3-0 libcanberra-gtk3-module libcanberra-pulse libcanberra0 libcap-ng0 libcap2 libcap2-bin libcc1-0 libcdio-cdda2 libcdio-paranoia2 libcdr-0.1-1 libcgi-fast-perl libcgi-pm-perl libcheese-gtk25 libcheese8 libclone-perl libclucene-contribs1v5 libclucene-core1v5 libclutter-1.0-0 libclutter-1.0-common libclutter-gst-3.0-0 libclutter-gtk-1.0-0 libcmis-0.5-5v5 libcogl-common libcogl-pango20 libcogl-path20 libcogl20 libcolamd2 libcolord-gtk1 libcolord2 libcolorhug2 libcom-err2 libcrack2 libcroco3 libcryptsetup12 libcups2 libcupsfilters1 libcupsimage2 libcurl3-gnutls libdaemon0 libdatrie1 libdazzle-1.0-0 libdb5.3 libdbus-1-3 libdbus-glib-1-2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdbusmenu-gtk4 libdconf1 libdebconfclient0 libdee-1.0-4 libdevmapper1.02.1 libdigest-hmac-perl libdjvulibre-text libdjvulibre21 libdmapsharing-3.0-2 libdpkg-perl libdrm-amdgpu1 libdrm-common libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libdrm2 libdv4 libdw1 libe-book-0.1-1 libebackend-1.2-10 libedataserverui-1.2-2 libedit2 libefiboot1 libefivar1 libegl-mesa0 libegl1 libegl1-mesa libelf1 libenchant1c2a libepoxy0 libepubgen-0.1-1 libespeak-ng1 libetonyek-0.1-1 libevdev2 libevdocument3-4 libevview3-3 libexif12 libexpat1 libexporter-tiny-perl libext2fs2 libfcgi-perl libfdisk1 libfftw3-double3 libfftw3-single3 libfile-basedir-perl libfile-copy-recursive-perl libfile-fcntllock-perl libfile-mimeinfo-perl libflac8 libfontconfig1 libfontembed1 libfontenc1 libfreehand-0.1-1 libfreerdp-client2-2 libfreerdp2-2 libfreetype6 libfribidi0 libfuse2 libfwupd2 libgail-3-0 libgail-common libgail18 libgbm1 libgc1c2 libgcab-1.0-0 libgcc1 libgck-1-0 libgcr-base-3-1 libgcr-ui-3-1 libgcrypt20 libgd3 libgdata-common libgdata22 libgdbm-compat4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-bin libgdk-pixbuf2.0-common libgdm1 libgee-0.8-2 libgeoclue-2-0 libgeocode-glib0 libgeoip1 libgexiv2-2 libgirepository-1.0-1 libgjs0g libgl1 libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libgles2 libglib-object-introspection-perl libglib-perl libglib2.0-0 libglib2.0-bin libglib2.0-data libglu1-mesa libglvnd0 libglx-mesa0 libglx0 libgmime-3.0-0 libgmp10 libgnome-autoar-0-0 libgnome-bluetooth13 libgnome-games-support-1-3 libgnome-games-support-common libgnome-menu-3-0 libgnome-todo libgnomekbd-common libgnomekbd8 libgnutls30 libgoa-1.0-0b libgoa-1.0-common libgoa-backend-1.0-1 libgom-1.0-0 libgomp1 libgpg-error0 libgpgme11 libgpgmepp6 libgphoto2-6 libgphoto2-l10n libgphoto2-port12 libgpod-common libgpod4 libgraphene-1.0-0 libgraphite2-3 libgrilo-0.3-0 libgs9 libgs9-common libgspell-1-common libgssapi-krb5-2 libgssapi3-heimdal libgstreamer-gl1.0-0 libgstreamer-plugins-base1.0-0 libgstreamer-plugins-good1.0-0 libgstreamer1.0-0 libgtk-3-0 libgtk-3-bin libgtk-3-common libgtk2.0-0 libgtk2.0-bin libgtk2.0-common libgtk3-perl libgtksourceview-3.0-1 libgtksourceview-3.0-common libgtop-2.0-11 libgtop2-common libgudev-1.0-0 libgusb2 libgweather-common libgxps2 libharfbuzz-icu0 libharfbuzz0b libhcrypto4-heimdal libheimbase1-heimdal libheimntlm0-heimdal libhpmud0 libhtml-form-perl libhtml-parser-perl libhtml-tagset-perl libhtml-tree-perl libhttp-cookies-perl libhttp-daemon-perl libhttp-date-perl libhttp-message-perl libhttp-negotiate-perl libhx509-5-heimdal libhyphen0 libibus-1.0-5 libical3 libice6 libidn11 libidn2-0 libiec61883-0 libieee1284-3 libijs-0.35 libimobiledevice6 libindicator3-7 libinput-bin libinput10 libio-pty-perl libio-socket-ssl-perl libipc-run-perl libipc-system-simple-perl libiptc0 libiw30 libjack-jackd2-0 libjansson4 libjavascriptcoregtk-4.0-18 libjbig0 libjbig2dec0 libjpeg-turbo8 libjson-glib-1.0-0 libjson-glib-1.0-common libk5crypto3 libkeyutils1 libklibc libkmod2 libkpathsea6 libkrb5-26-heimdal libkrb5-3 libkrb5support0 libksba8 liblangtag-common liblangtag1 liblcms2-2 liblcms2-utils libldap-2.4-2 libldap-common liblirc-client0 liblist-moreutils-perl libllvm10 libllvm6.0 liblocale-gettext-perl liblouis-data liblouisutdml-bin liblouisutdml-data libltdl7 liblua5.3-0 liblwp-mediatypes-perl liblwp-protocol-https-perl liblz4-1 liblzma5 liblzo2-2 libmagic-mgc libmagic1 libmailtools-perl libmbim-glib4 libmbim-proxy libmediaart-2.0-0 libmessaging-menu0 libmhash2 libmm-glib0 libmount1 libmozjs-52-0 libmp3lame0 libmpdec2 libmpfr6 libmpg123-0 libmspub-0.1-1 libmtdev1 libmtp-common libmtp-runtime libmtp9 libmwaw-0.3-3 libmythes-1.2-0 libnatpmp1 libnautilus-extension1a libncurses5 libncursesw5 libndp0 libneon27-gnutls libnet-dbus-perl libnet-dns-perl libnet-http-perl libnet-ip-perl libnet-libidn-perl libnet-ssleay-perl libnetfilter-conntrack3 libnetplan0 libnewt0.52 libnfnetlink0 libnghttp2-14 libnl-3-200 libnl-genl-3-200 libnm0 libnma0 libnotify-bin libnotify4 libnpth0 libnspr4 libnss-mdns libnss-myhostname libnss-systemd libnss3 libnuma1 liboauth0 libodfgen-0.1-1 libogg0 libopus0 liborc-0.4-0 libp11-kit0 libpackagekit-glib2-18 libpagemaker-0.0-0 libpam-cap libpam-gnome-keyring libpam-modules libpam-modules-bin libpam-runtime libpam-systemd libpam0g libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpangoxft-1.0-0 libpaper-utils libpaper1 libparse-debianchangelog-perl libparted-fs-resize0 libparted2 libpcap0.8 libpcaudio0 libpci3 libpciaccess0 libpcre3 libpcsclite1 libpeas-1.0-0 libpeas-common libperlio-gzip-perl libphonenumber7 libpipeline1 libpixman-1-0 libplist3 libpng16-16 libpolkit-agent-1-0 libpolkit-gobject-1-0 libpoppler-glib8 libpopt0 libproxy1-plugin-gsettings libproxy1-plugin-networkmanager libproxy1v5 libpsl5 libpulse-mainloop-glib0 libpulse0 libpulsedsp libpwquality-common libpwquality1 libpython2.7 libpython2.7-minimal libpython2.7-stdlib libpython3-stdlib libqmi-glib5 libqmi-proxy libqqwing2v5 libraptor2-0 librasqal3 librdf0 libreoffice-avmedia-backend-gstreamer libreoffice-base-core libreoffice-calc libreoffice-common libreoffice-core libreoffice-draw libreoffice-gnome libreoffice-gtk3 libreoffice-help-en-us libreoffice-impress libreoffice-math libreoffice-ogltrans libreoffice-pdfimport libreoffice-style-breeze libreoffice-style-galaxy libreoffice-style-tango libreoffice-writer librest-0.7-0 librevenge-0.0-0 librhythmbox-core10 libroken18-heimdal librsvg2-2 librsvg2-common librtmp1 libsamplerate0 libsane-common libsane-hpaio libsane1 libsasl2-2 libsasl2-modules libsasl2-modules-db libsbc1 libseccomp2 libsecret-1-0 libsecret-common libselinux1 libsemanage-common libsemanage1 libsepol1 libsgutils2-2 libshout3 libslang2 libsm6 libsmartcols1 libsmbclient libsmbios-c2 libsnapd-glib1 libsndfile1 libsnmp-base libsocket6-perl libsodium23 libsonic0 libsoup-gnome2.4-1 libsoup2.4-1 libspectre1 libspeechd2 libspeex1 libspeexdsp1 libsqlite3-0 libss2 libssh-4 libssl1.1 libstartup-notification0 libstdc++6 libstemmer0d libsub-name-perl libsuitesparseconfig5 libsysmetrics1 libsystemd0 libtag1v5 libtag1v5-vanilla libtalloc2 libtasn1-6 libtdb1 libteamdctl0 libtevent0 libtext-charwidth-perl libtext-iconv-perl libtext-wrapi18n-perl libthai-data libthai0 libtheora0 libtiff5 libtimedate-perl libtinfo5 libtotem-plparser-common libtotem-plparser18 libtotem0 libtracker-sparql-2.0-0 libtwolame0 libu2f-udev libudev1 libudisks2-0 libunistring2 libunity-protocol-private0 libunity-scopes-json-def-desktop libunity9 libunwind8 libupower-glib3 liburi-perl libusb-1.0-0 libuuid1 libv4l-0 libv4lconvert0 libvisio-0.1-1 libvisual-0.4-0 libvncclient1 libvolume-key1 libvorbis0a libvorbisenc2 libvorbisfile3 libvte-2.91-0 libvte-2.91-common libvulkan1 libwacom-bin libwacom-common libwacom2 libwavpack1 libwayland-client0 libwayland-cursor0 libwayland-egl1 libwayland-egl1-mesa libwayland-server0 libwbclient0 libwebkit2gtk-4.0-37 libwebp6 libwebpdemux2 libwebpmux3 libwebrtc-audio-processing1 libwhoopsie-preferences0 libwhoopsie0 libwind0-heimdal libwinpr2-2 libwmf0.2-7 libwmf0.2-7-gtk libwnck-3-0 libwnck-3-common libwoff1 libwpd-0.10-10 libwpg-0.3-3 libwps-0.4-4 libwrap0 libwww-perl libwww-robotrules-perl libx11-6 libx11-data libx11-xcb1 libxapian30 libxatracker2 libxau6 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-icccm4 libxcb-keysyms1 libxcb-present0 libxcb-randr0 libxcb-render-util0 libxcb-render0 libxcb-res0 libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcb-xfixes0 libxcb-xkb1 libxcb-xtest0 libxcb-xv0 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxdmcp6 libxext6 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon-x11-0 libxkbcommon0 libxkbfile1 libxklavier16 libxml-libxml-perl libxml-parser-perl libxml-sax-expat-perl libxml-sax-perl libxml-simple-perl libxml-twig-perl libxml2 libxmlb1 libxmlsec1 libxmlsec1-nss libxmu6 libxmuu1 libxpm4 libxrandr2 libxres1 libxslt1.1 libxss1 libxtables12 libxvmc1 libxxf86dga1 libxxf86vm1 libyajl2 libyaml-0-2 libyaml-libyaml-perl libyelp0 libzeitgeist-2.0-0 libzstd1 light-themes lintian linux-base linux-firmware linux-generic-hwe-18.04 linux-headers-5.4.0-113-generic linux-headers-5.4.0-150-generic linux-headers-generic-hwe-18.04 linux-image-5.4.0-113-generic linux-image-5.4.0-150-generic linux-image-generic-hwe-18.04 linux-modules-5.4.0-113-generic linux-modules-5.4.0-150-generic linux-modules-extra-5.4.0-113-generic linux-modules-extra-5.4.0-150-generic locales login logrotate lsb-base lsb-release lshw lsof ltrace man-db manpages mawk media-player-info memtest86+ mime-support mlocate mobile-broadband-provider-info modemmanager mount mousetweaks mscompress mtools mtr-tiny mutter mutter-common mythes-en-us nano nautilus nautilus-data nautilus-extension-gnome-terminal nautilus-sendto ncurses-base ncurses-bin netbase netcat-openbsd netplan.io network-manager network-manager-config-connectivity-ubuntu network-manager-gnome network-manager-pptp network-manager-pptp-gnome networkd-dispatcher notification-daemon ntfs-3g openprinting-ppds openssh-client openssl orca os-prober p11-kit p11-kit-modules packagekit packagekit-tools parted passwd patch pciutils pcmciautils perl perl-base perl-openssl-defaults pinentry-curses pinentry-gnome3 plymouth plymouth-label plymouth-theme-ubuntu-logo plymouth-theme-ubuntu-text policykit-1 policykit-desktop-privileges poppler-data poppler-utils popularity-contest powermgmt-base ppp pppconfig pptp-linux printer-driver-brlaser printer-driver-c2esp printer-driver-foo2zjs printer-driver-foo2zjs-common printer-driver-gutenprint printer-driver-hpcups printer-driver-m2300w printer-driver-min12xxw printer-driver-postscript-hp printer-driver-sag-gdi printer-driver-splix procps psmisc publicsuffix pulseaudio pulseaudio-module-bluetooth pulseaudio-utils python-apt-common python3 python3-apport python3-apt python3-aptdaemon python3-aptdaemon.gtk3widgets python3-asn1crypto python3-brlapi python3-cairo python3-certifi python3-cffi-backend python3-chardet python3-click python3-colorama python3-commandnotfound python3-crypto python3-cryptography python3-cups python3-cupshelpers python3-dateutil python3-dbus python3-debconf python3-debian python3-defer python3-distro-info python3-distupgrade python3-gdbm python3-gi python3-gi-cairo python3-httplib2 python3-idna python3-keyring python3-keyrings.alt python3-launchpadlib python3-lazr.restfulclient python3-lazr.uri python3-louis python3-macaroonbakery python3-mako python3-markupsafe python3-minimal python3-nacl python3-netifaces python3-oauth python3-olefile python3-pexpect python3-pil python3-pkg-resources python3-problem-report python3-protobuf python3-ptyprocess python3-pyatspi python3-pymacaroons python3-renderpm python3-reportlab python3-reportlab-accel python3-requests python3-requests-unixsocket python3-rfc3339 python3-secretstorage python3-simplejson python3-six python3-software-properties python3-speechd python3-systemd python3-tz python3-uno python3-update-manager python3-urllib3 python3-wadllib python3-xdg python3-xkit python3-yaml python3-zope.interface qpdf readline-common remmina remmina-common remmina-plugin-rdp remmina-plugin-secret remmina-plugin-vnc rfkill rhythmbox rhythmbox-data rhythmbox-plugin-alternative-toolbar rhythmbox-plugins rsync rsyslog rtkit samba-libs sane-utils sbsigntool seahorse secureboot-db sed sensible-utils session-migration shared-mime-info shotwell shotwell-common simple-scan snapd software-properties-common software-properties-gtk sound-icons speech-dispatcher speech-dispatcher-audio-plugins speech-dispatcher-espeak-ng spice-vdagent squashfs-tools strace sudo syslinux syslinux-common system-config-printer system-config-printer-common system-config-printer-udev systemd systemd-sysv sysvinit-utils t1utils tar tcpdump telnet thermald thunderbird thunderbird-gnome-support thunderbird-locale-en thunderbird-locale-en-us totem totem-common totem-plugins transmission-common transmission-gtk tzdata ubuntu-advantage-desktop-daemon ubuntu-advantage-tools ubuntu-artwork ubuntu-desktop ubuntu-docs ubuntu-drivers-common ubuntu-keyring ubuntu-minimal ubuntu-mono ubuntu-pro-client ubuntu-pro-client-l10n ubuntu-release-upgrader-core ubuntu-release-upgrader-gtk ubuntu-report ubuntu-session ubuntu-settings ubuntu-software ubuntu-sounds ubuntu-standard ubuntu-system-service ubuntu-wallpapers ubuntu-wallpapers-bionic ucf udev udisks2 ufw unattended-upgrades unzip update-inetd update-manager update-manager-core update-notifier update-notifier-common upower ure usb-creator-common usb-creator-gtk usb-modeswitch usb-modeswitch-data usbmuxd usbutils util-linux uuid-runtime vim-common vim-tiny vino wamerican wbritish wget whiptail whoopsie whoopsie-preferences wireless-regdb wireless-tools wpasupplicant x11-apps x11-common x11-session-utils x11-utils x11-xkb-utils x11-xserver-utils xauth xbrlapi xcursor-themes xdg-desktop-portal xdg-desktop-portal-gtk xdg-user-dirs xdg-user-dirs-gtk xdg-utils xfonts-base xfonts-encodings xinit xinput xkb-data xorg xserver-common xserver-xephyr xserver-xorg-core-hwe-18.04 xserver-xorg-hwe-18.04 xserver-xorg-input-all-hwe-18.04 xserver-xorg-input-libinput-hwe-18.04 xserver-xorg-input-wacom-hwe-18.04 xserver-xorg-legacy-hwe-18.04 xserver-xorg-video-all-hwe-18.04 xserver-xorg-video-amdgpu-hwe-18.04 xserver-xorg-video-ati-hwe-18.04 xserver-xorg-video-fbdev-hwe-18.04 xserver-xorg-video-intel-hwe-18.04 xserver-xorg-video-nouveau-hwe-18.04 xserver-xorg-video-qxl-hwe-18.04 xserver-xorg-video-radeon-hwe-18.04 xserver-xorg-video-vesa-hwe-18.04 xserver-xorg-video-vmware-hwe-18.04 xwayland xxd xz-utils yelp yelp-xsl zeitgeist-core zenity zenity-common zlib1g
+2024-05-17 11:44:58,497 DEBUG cache aufs_rw_dir: /tmp/
+2024-05-17 11:44:58,497 DEBUG Free space on /: 80104574976
+2024-05-17 11:44:58,497 DEBUG Dir /usr mounted on /
+2024-05-17 11:44:58,498 DEBUG Dir /var mounted on /
+2024-05-17 11:44:58,498 DEBUG Dir /boot mounted on /
+2024-05-17 11:44:58,498 DEBUG Dir /var/cache/apt/archives mounted on /
+2024-05-17 11:44:58,498 DEBUG Dir /tmp mounted on /
+2024-05-17 11:44:58,498 DEBUG Free space on /home: 206085808128
+2024-05-17 11:44:58,498 DEBUG Dir /tmp mounted on /
+2024-05-17 11:44:58,499 DEBUG fs_free contains: '{'/': <DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0f6d828>, '/usr': <DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0f6d828>, '/var': <DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0f6d828>, '/boot': <DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0f6d828>, '/var/cache/apt/archives': <DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0f6d828>, '/tmp': <DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0f6d828>, '/home': <DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0f6d668>}'
+2024-05-17 11:44:59,121 DEBUG linux-image-5.4.0-113-generic (new-install) added with 16855640 to boot space
+2024-05-17 11:44:59,122 DEBUG linux-image-5.4.0-150-generic (new-install) added with 16855640 to boot space
+2024-05-17 11:44:59,123 DEBUG linux-image-5.4.0-182-generic (new-install) added with 16855640 to boot space
+2024-05-17 11:45:01,420 DEBUG dir '/var/cache/apt/archives' needs '1304985442' of '<DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0f6d828>' (80104574976.000000)
+2024-05-17 11:45:01,421 DEBUG dir '/usr' needs '1880366080' of '<DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0f6d828>' (78799589534.000000)
+2024-05-17 11:45:01,421 DEBUG dir '/var' needs '13553664' of '<DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0f6d828>' (76919223454.000000)
+2024-05-17 11:45:01,421 DEBUG dir '/usr' needs '52428800' of '<DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0f6d828>' (76905669790.000000)
+2024-05-17 11:45:01,421 DEBUG dir '/boot' needs '242296138.8' of '<DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0f6d828>' (76853240990.000000)
+2024-05-17 11:45:01,421 DEBUG dir '/tmp' needs '5242880' of '<DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0f6d828>' (76610944851.199997)
+2024-05-17 11:45:01,421 DEBUG dir '/' needs '10485760' of '<DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0f6d828>' (76605701971.199997)
+2024-05-17 11:45:01,421 DEBUG dir '/tmp' needs '0.0' of '<DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0f6d828>' (76595216211.199997)
+2024-05-17 11:45:01,421 DEBUG dir '/usr' needs '0.0' of '<DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0f6d828>' (76595216211.199997)
+2024-05-17 11:45:01,422 DEBUG Not an UEFI system
+2024-05-17 11:45:01,428 DEBUG demoted: 'libdbusmenu-gtk4 libegl1-mesa libllvm6.0'
+2024-05-17 11:45:01,428 DEBUG found components: {'focal': {'multiverse', 'main', 'restricted', 'universe'}, 'focal-updates': {'multiverse', 'main', 'restricted', 'universe'}, 'focal-security': {'multiverse', 'main', 'restricted', 'universe'}}
+2024-05-17 11:45:29,413 DEBUG inhibit gnome-session idle
+2024-05-17 12:06:46,350 DEBUG quirks: running StartUpgrade
+2024-05-17 12:06:46,358 DEBUG running Quirks.StartUpgrade
+2024-05-17 12:06:46,359 DEBUG skipping 'README' (no '.')
+2024-05-17 12:06:46,360 DEBUG killing update-notifier
+2024-05-17 12:06:46,522 DEBUG killing kblueplugd kbluetooth4
+2024-05-17 12:06:46,532 DEBUG killing gnome-screensaver
+2024-05-17 12:06:46,549 DEBUG setup poke timer for the screensaver
+2024-05-17 12:06:46,593 DEBUG _fipsLibgcryptDivert
+2024-05-17 12:06:46,594 DEBUG System is not fips enabled, no dpkg-divert needed
+2024-05-17 12:06:46,638 INFO cache.commit()
+2024-05-17 12:06:52,436 DEBUG cache.commit() returned None
+2024-05-17 12:06:53,055 DEBUG quirks: running StartUpgrade
+2024-05-17 12:06:53,055 DEBUG running Quirks.StartUpgrade
+2024-05-17 12:06:53,055 DEBUG skipping 'README' (no '.')
+2024-05-17 12:06:53,056 DEBUG killing update-notifier
+2024-05-17 12:06:53,068 DEBUG killing kblueplugd kbluetooth4
+2024-05-17 12:06:53,079 DEBUG killing gnome-screensaver
+2024-05-17 12:06:53,092 DEBUG setup poke timer for the screensaver
+2024-05-17 12:06:53,096 DEBUG _fipsLibgcryptDivert
+2024-05-17 12:06:53,096 DEBUG System is not fips enabled, no dpkg-divert needed
+2024-05-17 12:06:53,098 INFO cache.commit()
+2024-05-17 12:08:36,555 DEBUG cache.commit() returned None
+2024-05-17 12:08:36,555 DEBUG openCache()
+2024-05-17 12:08:37,882 DEBUG Comparing 5.4.0-113 with 
+2024-05-17 12:08:37,882 DEBUG Comparing 5.4.0-150 with 5.4.0-113
+2024-05-17 12:08:38,390 DEBUG /openCache(), new cache size 96456
+2024-05-17 12:08:38,391 DEBUG need_server_mode(): run in 'desktop' mode, (because of pkg 'ubuntu-desktop')
+2024-05-17 12:08:38,392 DEBUG quirks: running PreDistUpgradeCache
+2024-05-17 12:08:38,392 DEBUG running Quirks.PreDistUpgradeCache
+2024-05-17 12:08:38,392 INFO checking for python-dbg (auto_inst=False)
+2024-05-17 12:08:38,392 INFO checking for python-doc (auto_inst=False)
+2024-05-17 12:08:38,392 INFO checking for python-minimal (auto_inst=False)
+2024-05-17 12:08:38,392 INFO checking for python-dev (auto_inst=False)
+2024-05-17 12:08:38,392 INFO checking for libpython-dev (auto_inst=False)
+2024-05-17 12:08:38,392 INFO checking for libpython-stdlib (auto_inst=False)
+2024-05-17 12:08:38,393 INFO checking for libpython-dbg (auto_inst=False)
+2024-05-17 12:08:38,393 INFO checking for python-dbg (auto_inst=True)
+2024-05-17 12:08:38,393 INFO checking for python-doc (auto_inst=True)
+2024-05-17 12:08:38,393 INFO checking for python-minimal (auto_inst=True)
+2024-05-17 12:08:38,393 INFO checking for python-dev (auto_inst=True)
+2024-05-17 12:08:38,393 INFO checking for libpython-dev (auto_inst=True)
+2024-05-17 12:08:38,393 INFO checking for libpython-stdlib (auto_inst=True)
+2024-05-17 12:08:38,393 INFO checking for libpython-dbg (auto_inst=True)
+2024-05-17 12:08:41,663 DEBUG Running KeepInstalledSection rules
+2024-05-17 12:08:43,340 DEBUG Kernel uname: '5.4.0-150-generic' 
+2024-05-17 12:08:43,362 DEBUG nvidiaUpdate()
+2024-05-17 12:08:45,220 INFO no old nvidia driver installed, installing no new
+2024-05-17 12:08:45,221 DEBUG Removing 'gnome-cups-manager' (ubuntu-desktop PostUpgradeRemove rule)
+2024-05-17 12:08:45,221 DEBUG Removing 'powermanagement-interface' (ubuntu-desktop PostUpgradeRemove rule)
+2024-05-17 12:08:45,221 DEBUG Removing 'deskbar-applet' (ubuntu-desktop PostUpgradeRemove rule)
+2024-05-17 12:08:45,221 DEBUG Removing 'nautilus-cd-burner' (ubuntu-desktop PostUpgradeRemove rule)
+2024-05-17 12:08:45,222 DEBUG quirks: running PostDistUpgradeCache
+2024-05-17 12:08:45,222 DEBUG running Quirks.PostDistUpgradeCache
+2024-05-17 12:08:45,755 DEBUG Comparing 5.4.0-113 with 
+2024-05-17 12:08:45,756 DEBUG Comparing 5.4.0-150 with 5.4.0-113
+2024-05-17 12:08:45,757 DEBUG Comparing 5.4.0-182 with 5.4.0-150
+2024-05-17 12:08:46,225 INFO installing linux metapackage: linux-generic
+2024-05-17 12:08:46,225 DEBUG Installing 'linux-generic' (linux metapackage may have been accidentally uninstalled)
+2024-05-17 12:08:46,225 DEBUG Marking 'ubuntu-desktop' for upgrade
+2024-05-17 12:08:47,167 DEBUG About to apply the following changes
+2024-05-17 12:08:48,357 DEBUG Keep at same version: adium-theme-ubuntu alsa-base apg branding-ubuntu command-not-found-data crda dmz-cursor-theme fonts-beng fonts-dejavu-core fonts-deva fonts-droid-fallback fonts-gargi fonts-gubbi fonts-guru fonts-kacst fonts-khmeros-core fonts-knda fonts-lao fonts-lklug-sinhala fonts-lohit-beng-assamese fonts-lohit-beng-bengali fonts-lohit-guru fonts-lohit-mlym fonts-lohit-orya fonts-lohit-taml fonts-lohit-taml-classical fonts-lohit-telu fonts-mlym fonts-nakula fonts-navilu fonts-orya fonts-pagul fonts-sahadeva fonts-samyak-deva fonts-samyak-gujr fonts-samyak-mlym fonts-samyak-taml fonts-sarai fonts-taml fonts-telu fonts-telu-extra fonts-tibetan-machine gcc-10-base gir1.2-mutter-2 gnome-accessibility-themes gnome-themes-extra gnome-themes-extra-data google-chrome-stable grub-gfxpayload-lists gsettings-ubuntu-schemas gsfonts hicolor-icon-theme humanity-icon-theme iucode-tool kerneloops laptop-detect libao-common libao4 libasyncns0 libauthen-sasl-perl libbind9-160 libboost-date-time1.65.1 libboost-filesystem1.65.1 libboost-iostreams1.65.1 libboost-locale1.65.1 libboost-system1.65.1 libboost-thread1.65.1 libbrlapi0.6 libc-bin libc6 libc6-dbg libcamel-1.2-61 libcdio17 libcdparanoia0 libclass-accessor-perl libcrypt1 libdata-dump-perl libdns-export1100 libdns1100 libdotconf0 libebook-contacts-1.2-2 libecal-1.2-19 libedataserver-1.2-23 libemail-valid-perl libencode-locale-perl libeot0 libestr0 libevent-2.1-6 libexempi3 libexiv2-14 libexttextcat-2.0-0 libexttextcat-data libfastjson4 libffi6 libfile-desktopentry-perl libfile-listing-perl libfont-afm-perl libgcc-s1 libgdbm5 libgnome-desktop-3-17 libgpm2 libgspell-1-1 libgutenprint2 libgweather-3-15 libhogweed4 libhtml-format-perl libhunspell-1.6-0 libicu60 libidn2-0 libilmbase12 libio-html-perl libio-socket-inet6-perl libio-string-perl libip4tc0 libip6tc0 libirs160 libisc-export169 libisc169 libisccc160 libisccfg160 libisl19 libjpeg8 libjson-c3 liblouis14 liblouisutdml8 liblqr-1-0 liblwres160 libmagickcore-6.q16-3 libmagickcore-6.q16-3-extra libmagickwand-6.q16-3 libminiupnpc10 libmnl0 libmpc3 libmutter-2-0 libnet-domain-tld-perl libnet-smtp-ssl-perl libnetpbm10 libnettle6 libnih1 libntfs-3g88 libopenexr22 liborcus-0.13-0 libperl5.26 libplymouth4 libpoppler73 libprocps6 libprotobuf10 libpython3.6 libpython3.6-minimal libpython3.6-stdlib libqpdf21 libraw1394-11 libraw16 libreadline7 libssl1.0.0 libtext-levenshtein-perl libtie-ixhash-perl libtry-tiny-perl libusbmuxd4 libvpx5 libx11-protocol-perl libxaw7 libxcb-image0 libxcb-util1 libxfont2 libxml-namespacesupport-perl libxml-sax-base-perl libxml-xpathengine-perl libxrender1 libxshmfence1 libxt6 libxtst6 libxv1 linux-hwe-5.4-headers-5.4.0-104 linux-hwe-5.4-headers-5.4.0-113 linux-hwe-5.4-headers-5.4.0-150 linux-hwe-5.4-headers-5.4.0-42 linux-hwe-5.4-headers-5.4.0-53 linux-hwe-5.4-headers-5.4.0-58 linux-hwe-5.4-headers-5.4.0-65 linux-hwe-5.4-headers-5.4.0-72 linux-hwe-5.4-headers-5.4.0-81 linux-sound-base locales lp-solve multiarch-support nautilus-share netpbm nplan patchutils perl-modules-5.26 pppoeconf printer-driver-pnm2ppa printer-driver-ptouch printer-driver-pxljr python-talloc python3.6 python3.6-minimal sound-theme-freedesktop ssl-cert syslinux-legacy time ubuntu-web-launchers ureadahead xbitmaps xfonts-scalable xfonts-utils xorg-docs-core xul-ext-ubufox zip zoom
+2024-05-17 12:08:48,357 DEBUG Upgradable, but held- back: 
+2024-05-17 12:08:48,357 DEBUG Remove: fwupdate-signed gnome-settings-daemon-schemas libapt-inst2.0 libapt-pkg5.0 libcupscgi1 libcupsmime1 libcupsppdc1 libebook-1.2-19 libedata-book-1.2-25 libedata-cal-1.2-28 libfwup1 libldb1 libpolkit-backend-1-0 libsensors4 libsnmp30 uno-libs3
+2024-05-17 12:08:48,357 DEBUG Install: alsa-topology-conf alsa-ucm-conf apt-config-icons-hidpi bind9-dnsutils bind9-libs build-essential cpp-9 docbook-xml dpkg-dev duplicity enchant-2 fakeroot fonts-smc-gayathri fonts-urw-base35 fonts-yrsa-rasa fprintd g++ g++-9 gamemode gcc gcc-9 gcc-9-base gir1.2-clutter-1.0 gir1.2-clutter-gst-3.0 gir1.2-cogl-1.0 gir1.2-coglpango-1.0 gir1.2-graphene-1.0 gir1.2-gtkclutter-1.0 gir1.2-gtksource-4 gir1.2-mutter-6 gnome-calculator gnome-characters gnome-logs gnome-settings-daemon-common gnome-shell-extension-desktop-icons gnome-system-monitor guile-2.2-libs ibus-data libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl libamtk-5-0 libamtk-5-common libapt-pkg6.0 libargon2-1 libasan5 libasync-mergepoint-perl libatkmm-1.6-1v5 libatomic1 libatopology2 libb-hooks-endofscope-perl libb-hooks-op-check-perl libboost-date-time1.71.0 libboost-filesystem1.71.0 libboost-iostreams1.71.0 libboost-locale1.71.0 libboost-thread1.71.0 libbrlapi0.7 libc-dev-bin libc6-dev libcairomm-1.0-1v5 libcamel-1.2-62 libcapture-tiny-perl libcbor0.6 libcdio18 libclass-method-modifiers-perl libclass-xsaccessor-perl libcpanel-json-xs-perl libcrypt-dev libctf-nobfd0 libctf0 libcue2 libcurl4 libdevel-callchecker-perl libdevel-size-perl libdigest-bubblebabble-perl libdns-export1109 libdynaloader-functions-perl libebook-1.2-20 libebook-contacts-1.2-3 libecal-2.0-1 libedata-book-1.2-26 libedata-cal-2.0-1 libedataserver-1.2-24 libenchant-2-2 libevent-2.1-7 libexempi8 libexiv2-27 libextutils-depends-perl libextutils-pkgconfig-perl libfakeroot libffi7 libfido2-1 libfile-find-rule-perl libfont-ttf-perl libfprint-2-2 libfuture-perl libfwupdplugin5 libgamemode0 libgamemodeauto0 libgcc-9-dev libgdbm6 libgif7 libglibmm-2.4-1v5 libgnome-desktop-3-19 libgpg-error-l10n libgsf-1-114 libgsf-1-common libgsound0 libgspell-1-2 libgssdp-1.2-0 libgtkmm-3.0-1v5 libgtksourceview-4-0 libgtksourceview-4-common libgupnp-1.2-0 libgupnp-av-1.0-2 libgupnp-dlna-2.0-3 libgutenprint-common libgutenprint9 libgweather-3-16 libhandy-0.0-0 libhogweed5 libhunspell-1.7-0 libicu66 libilmbase24 libimagequant0 libimport-into-perl libio-async-loop-epoll-perl libio-async-perl libio-stringy-perl libip4tc2 libip6tc2 libisc-export1105 libisl22 libitm1 libjcat1 libjson-c4 libjson-maybexs-perl libjuh-java libjurt-java libldb2 liblinux-epoll-perl liblist-compare-perl libllvm12 liblmdb0 liblouis20 liblouisutdml9 liblsan0 libmagickcore-6.q16-6 libmagickcore-6.q16-6-extra libmagickwand-6.q16-6 libmaxminddb0 libminiupnpc17 libmodule-implementation-perl libmodule-runtime-perl libmoo-perl libmoox-aliases-perl libmozjs-68-0 libmutter-6-0 libmysqlclient21 libnamespace-clean-perl libncurses6 libncursesw6 libnet-dns-sec-perl libnettle7 libnfs13 libnftnl11 libnl-route-3-200 libntfs-3g883 libnumber-compare-perl libopenexr24 libopengl0 libopenjp2-7 liborcus-0.15-0 libpackage-stash-perl libpackage-stash-xs-perl libpam-fprintd libpangomm-1.4-1v5 libparams-classify-perl libpath-tiny-perl libpcre2-32-0 libpcre2-8-0 libperl4-corelibs-perl libperl5.30 libpkcs11-helper1 libplymouth5 libpoppler-cpp0v5 libpoppler97 libprocps8 libprotobuf17 libpython3.8 libpython3.8-minimal libpython3.8-stdlib libqpdf26 libquadmath0 libraw19 libreadline8 libreadonly-perl libref-util-perl libref-util-xs-perl libreoffice-help-common libreoffice-style-colibre libreoffice-style-elementary libridl-java librole-tiny-perl librsync2 librygel-core-2.6-2 librygel-db-2.6-2 librygel-renderer-2.6-2 librygel-server-2.6-2 libsane libsensors-config libsensors5 libsereal-decoder-perl libsereal-encoder-perl libsereal-perl libsigc++-2.0-0v5 libsnmp35 libsoxr0 libstdc++-9-dev libstrictures-perl libstruct-dumb-perl libsub-exporter-progressive-perl libsub-identify-perl libsub-quote-perl libsynctex2 libtepl-4-0 libtest-fatal-perl libtest-refcount-perl libtext-glob-perl libtinfo6 libtracker-control-2.0-0 libtracker-miner-2.0-0 libtsan0 libtss2-esys0 libtype-tiny-perl libtype-tiny-xs-perl libubsan1 libuchardet0 libunicode-utf8-perl libuno-cppu3 libuno-cppuhelpergcc3-3 libuno-purpenvhelpergcc3-3 libuno-sal3 libuno-salhelpergcc3-3 libunoloader-java libusbmuxd6 libuv1 libvariable-magic-perl libvpx6 libxml-writer-perl libxmlb2 linux-generic linux-headers-5.4.0-113 linux-headers-5.4.0-150 linux-headers-5.4.0-182 linux-headers-5.4.0-182-generic linux-headers-generic linux-image-5.4.0-182-generic linux-image-generic linux-libc-dev linux-modules-5.4.0-182-generic linux-modules-extra-5.4.0-182-generic logsave lz4 make manpages-dev mesa-vulkan-drivers mysql-common network-manager-openvpn network-manager-openvpn-gnome openvpn pci.ids perl-modules-5.30 pkg-config plymouth-theme-spinner python3-bcrypt python3-blinker python3-distro python3-entrypoints python3-fasteners python3-future python3-ibus-1.0 python3-jwt python3-ldb python3-lib2to3 python3-lockfile python3-monotonic python3-oauthlib python3-paramiko python3-talloc python3.8 python3.8-minimal rygel sgml-base sgml-data switcheroo-control systemd-timesyncd tpm-udev tracker tracker-extract tracker-miner-fs ubuntu-desktop-minimal ubuntu-wallpapers-focal uno-libs-private usb.ids xdg-dbus-proxy xml-core xserver-xorg xserver-xorg-core xserver-xorg-input-all xserver-xorg-input-libinput xserver-xorg-input-wacom xserver-xorg-legacy xserver-xorg-video-all xserver-xorg-video-amdgpu xserver-xorg-video-ati xserver-xorg-video-fbdev xserver-xorg-video-intel xserver-xorg-video-nouveau xserver-xorg-video-qxl xserver-xorg-video-radeon xserver-xorg-video-vesa xserver-xorg-video-vmware yaru-theme-gnome-shell yaru-theme-gtk yaru-theme-icon yaru-theme-sound
+2024-05-17 12:08:48,358 DEBUG Upgrade: accountsservice acl acpi-support acpid adduser adwaita-icon-theme aisleriot alsa-utils amd64-microcode anacron app-install-data-partner apparmor apport apport-gtk apport-symptoms appstream apt apt-config-icons apt-utils aptdaemon aptdaemon-data apturl apturl-common aspell aspell-en at-spi2-core avahi-autoipd avahi-daemon avahi-utils baobab base-files base-passwd bash bash-completion bc bind9-host binutils binutils-common binutils-x86-64-linux-gnu bluez bluez-cups bluez-obexd bolt brltty bsdmainutils bsdutils bubblewrap busybox-initramfs busybox-static bzip2 ca-certificates cheese cheese-common colord colord-data command-not-found console-setup console-setup-linux coreutils cpio cpp cpp-7 cracklib-runtime cron cups cups-browsed cups-bsd cups-client cups-common cups-core-drivers cups-daemon cups-filters cups-filters-core-drivers cups-ipp-utils cups-pk-helper cups-ppdc cups-server-common dash dbus dbus-user-session dbus-x11 dc dconf-cli dconf-gsettings-backend dconf-service debconf debconf-i18n debianutils deja-dup desktop-file-utils dictionaries-common diffstat diffutils dirmngr distro-info distro-info-data dmidecode dmsetup dns-root-data dnsmasq-base dnsutils dosfstools dpkg e2fsprogs ed efibootmgr eject emacsen-common enchant eog espeak-ng-data evince evince-common evolution-data-server evolution-data-server-common example-content fdisk file file-roller findutils firefox firefox-locale-en fontconfig fontconfig-config fonts-beng-extra fonts-deva-extra fonts-freefont-ttf fonts-gujr fonts-gujr-extra fonts-guru-extra fonts-indic fonts-kacst-one fonts-kalapi fonts-liberation fonts-liberation2 fonts-lohit-deva fonts-lohit-gujr fonts-lohit-knda fonts-noto-cjk fonts-noto-color-emoji fonts-noto-mono fonts-opensymbol fonts-orya-extra fonts-sil-abyssinica fonts-sil-padauk fonts-smc fonts-smc-anjalioldlipi fonts-smc-chilanka fonts-smc-dyuthi fonts-smc-karumbi fonts-smc-keraleeyam fonts-smc-manjari fonts-smc-meera fonts-smc-rachana fonts-smc-raghumalayalamsans fonts-smc-suruma fonts-smc-uroob fonts-thai-tlwg fonts-tlwg-garuda fonts-tlwg-garuda-ttf fonts-tlwg-kinnari fonts-tlwg-kinnari-ttf fonts-tlwg-laksaman fonts-tlwg-laksaman-ttf fonts-tlwg-loma fonts-tlwg-loma-ttf fonts-tlwg-mono fonts-tlwg-mono-ttf fonts-tlwg-norasi fonts-tlwg-norasi-ttf fonts-tlwg-purisa fonts-tlwg-purisa-ttf fonts-tlwg-sawasdee fonts-tlwg-sawasdee-ttf fonts-tlwg-typewriter fonts-tlwg-typewriter-ttf fonts-tlwg-typist fonts-tlwg-typist-ttf fonts-tlwg-typo fonts-tlwg-typo-ttf fonts-tlwg-umpush fonts-tlwg-umpush-ttf fonts-tlwg-waree fonts-tlwg-waree-ttf fonts-ubuntu foomatic-db-compressed-ppds friendly-recovery ftp fuse fwupd fwupd-signed fwupdate gcc-7-base gcc-8-base gcr gdb gdbserver gdisk gdm3 gedit gedit-common genisoimage geoclue-2.0 geoip-database gettext gettext-base ghostscript ghostscript-x gir1.2-accountsservice-1.0 gir1.2-atk-1.0 gir1.2-atspi-2.0 gir1.2-dbusmenu-glib-0.4 gir1.2-dee-1.0 gir1.2-freedesktop gir1.2-gck-1 gir1.2-gcr-3 gir1.2-gdesktopenums-3.0 gir1.2-gdkpixbuf-2.0 gir1.2-gdm-1.0 gir1.2-geoclue-2.0 gir1.2-geocodeglib-1.0 gir1.2-glib-2.0 gir1.2-gmenu-3.0 gir1.2-gnomebluetooth-1.0 gir1.2-gnomedesktop-3.0 gir1.2-goa-1.0 gir1.2-gst-plugins-base-1.0 gir1.2-gstreamer-1.0 gir1.2-gtk-3.0 gir1.2-gtksource-3.0 gir1.2-gudev-1.0 gir1.2-gweather-3.0 gir1.2-ibus-1.0 gir1.2-javascriptcoregtk-4.0 gir1.2-json-1.0 gir1.2-nm-1.0 gir1.2-nma-1.0 gir1.2-notify-0.7 gir1.2-packagekitglib-1.0 gir1.2-pango-1.0 gir1.2-peas-1.0 gir1.2-polkit-1.0 gir1.2-rb-3.0 gir1.2-rsvg-2.0 gir1.2-secret-1 gir1.2-snapd-1 gir1.2-soup-2.4 gir1.2-totem-1.0 gir1.2-totemplparser-1.0 gir1.2-udisks-2.0 gir1.2-unity-5.0 gir1.2-upowerglib-1.0 gir1.2-vte-2.91 gir1.2-webkit2-4.0 gir1.2-wnck-3.0 gjs gkbd-capplet glib-networking glib-networking-common glib-networking-services gnome-bluetooth gnome-calendar gnome-control-center gnome-control-center-data gnome-control-center-faces gnome-desktop3-data gnome-disk-utility gnome-font-viewer gnome-getting-started-docs gnome-initial-setup gnome-keyring gnome-keyring-pkcs11 gnome-mahjongg gnome-menus gnome-mines gnome-online-accounts gnome-power-manager gnome-screenshot gnome-session-bin gnome-session-canberra gnome-session-common gnome-settings-daemon gnome-shell gnome-shell-common gnome-shell-extension-appindicator gnome-shell-extension-ubuntu-dock gnome-software gnome-software-common gnome-software-plugin-snap gnome-startup-applications gnome-sudoku gnome-terminal gnome-terminal-data gnome-todo gnome-todo-common gnome-user-docs gnome-user-guide gnome-video-effects gnupg gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client gpg-wks-server gpgconf gpgsm gpgv grep grilo-plugins-0.3-base groff-base grub-common grub-pc grub-pc-bin grub2-common gsettings-desktop-schemas gstreamer1.0-alsa gstreamer1.0-clutter-3.0 gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-packagekit gstreamer1.0-plugins-base gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-good gstreamer1.0-pulseaudio gstreamer1.0-tools gstreamer1.0-x gtk-update-icon-cache gtk2-engines-murrine gtk2-engines-pixbuf guile-2.0-libs gvfs gvfs-backends gvfs-bin gvfs-common gvfs-daemons gvfs-fuse gvfs-libs gzip hdparm hostname hplip hplip-data hunspell-en-us hyphen-en-us ibus ibus-gtk ibus-gtk3 ibus-table ifupdown iio-sensor-proxy im-config imagemagick imagemagick-6-common imagemagick-6.q16 info init init-system-helpers initramfs-tools initramfs-tools-bin initramfs-tools-core inputattach install-info intel-microcode intltool-debian ippusbxd iproute2 iptables iputils-arping iputils-ping iputils-tracepath irqbalance isc-dhcp-client isc-dhcp-common iso-codes iw kbd keyboard-configuration klibc-utils kmod krb5-locales language-pack-en language-pack-en-base language-pack-gnome-en language-pack-gnome-en-base language-selector-common language-selector-gnome less libaa1 libabw-0.1-1 libaccountsservice0 libacl1 libapparmor1 libappindicator3-1 libappstream-glib8 libappstream4 libapt-pkg-perl libarchive-zip-perl libarchive13 libargon2-0 libart-2.0-2 libasn1-8-heimdal libasound2 libasound2-data libasound2-plugins libaspell15 libassuan0 libatasmart4 libatk-adaptor libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatm1 libatspi2.0-0 libattr1 libaudio2 libaudit-common libaudit1 libavahi-client3 libavahi-common-data libavahi-common3 libavahi-core7 libavahi-glib1 libavahi-ui-gtk3-0 libavc1394-0 libbabeltrace1 libbinutils libblkid1 libblockdev-crypto2 libblockdev-fs2 libblockdev-loop2 libblockdev-part-err2 libblockdev-part2 libblockdev-swap2 libblockdev-utils2 libblockdev2 libbluetooth3 libbrotli1 libbsd0 libbz2-1.0 libcaca0 libcairo-gobject-perl libcairo-gobject2 libcairo-perl libcairo2 libcanberra-gtk3-0 libcanberra-gtk3-module libcanberra-pulse libcanberra0 libcap-ng0 libcap2 libcap2-bin libcc1-0 libcdio-cdda2 libcdio-paranoia2 libcdr-0.1-1 libcgi-fast-perl libcgi-pm-perl libcheese-gtk25 libcheese8 libclone-perl libclucene-contribs1v5 libclucene-core1v5 libclutter-1.0-0 libclutter-1.0-common libclutter-gst-3.0-0 libclutter-gtk-1.0-0 libcmis-0.5-5v5 libcogl-common libcogl-pango20 libcogl-path20 libcogl20 libcolamd2 libcolord-gtk1 libcolord2 libcolorhug2 libcom-err2 libcrack2 libcroco3 libcryptsetup12 libcups2 libcupsfilters1 libcupsimage2 libcurl3-gnutls libdaemon0 libdatrie1 libdazzle-1.0-0 libdb5.3 libdbus-1-3 libdbus-glib-1-2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdbusmenu-gtk4 libdconf1 libdebconfclient0 libdee-1.0-4 libdevmapper1.02.1 libdigest-hmac-perl libdjvulibre-text libdjvulibre21 libdmapsharing-3.0-2 libdpkg-perl libdrm-amdgpu1 libdrm-common libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libdrm2 libdv4 libdw1 libe-book-0.1-1 libebackend-1.2-10 libedataserverui-1.2-2 libedit2 libefiboot1 libefivar1 libegl-mesa0 libegl1 libegl1-mesa libelf1 libenchant1c2a libepoxy0 libepubgen-0.1-1 libespeak-ng1 libetonyek-0.1-1 libevdev2 libevdocument3-4 libevview3-3 libexif12 libexpat1 libexporter-tiny-perl libext2fs2 libfcgi-perl libfdisk1 libfftw3-double3 libfftw3-single3 libfile-basedir-perl libfile-copy-recursive-perl libfile-fcntllock-perl libfile-mimeinfo-perl libflac8 libfontconfig1 libfontembed1 libfontenc1 libfreehand-0.1-1 libfreerdp-client2-2 libfreerdp2-2 libfreetype6 libfribidi0 libfuse2 libfwupd2 libgail-3-0 libgail-common libgail18 libgbm1 libgc1c2 libgcab-1.0-0 libgcc1 libgck-1-0 libgcr-base-3-1 libgcr-ui-3-1 libgcrypt20 libgd3 libgdata-common libgdata22 libgdbm-compat4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-bin libgdk-pixbuf2.0-common libgdm1 libgee-0.8-2 libgeoclue-2-0 libgeocode-glib0 libgeoip1 libgexiv2-2 libgirepository-1.0-1 libgjs0g libgl1 libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libgles2 libglib-object-introspection-perl libglib-perl libglib2.0-0 libglib2.0-bin libglib2.0-data libglu1-mesa libglvnd0 libglx-mesa0 libglx0 libgmime-3.0-0 libgmp10 libgnome-autoar-0-0 libgnome-bluetooth13 libgnome-games-support-1-3 libgnome-games-support-common libgnome-menu-3-0 libgnome-todo libgnomekbd-common libgnomekbd8 libgnutls30 libgoa-1.0-0b libgoa-1.0-common libgoa-backend-1.0-1 libgom-1.0-0 libgomp1 libgpg-error0 libgpgme11 libgpgmepp6 libgphoto2-6 libgphoto2-l10n libgphoto2-port12 libgpod-common libgpod4 libgraphene-1.0-0 libgraphite2-3 libgrilo-0.3-0 libgs9 libgs9-common libgspell-1-common libgssapi-krb5-2 libgssapi3-heimdal libgstreamer-gl1.0-0 libgstreamer-plugins-base1.0-0 libgstreamer-plugins-good1.0-0 libgstreamer1.0-0 libgtk-3-0 libgtk-3-bin libgtk-3-common libgtk2.0-0 libgtk2.0-bin libgtk2.0-common libgtk3-perl libgtksourceview-3.0-1 libgtksourceview-3.0-common libgtop-2.0-11 libgtop2-common libgudev-1.0-0 libgusb2 libgweather-common libgxps2 libharfbuzz-icu0 libharfbuzz0b libhcrypto4-heimdal libheimbase1-heimdal libheimntlm0-heimdal libhpmud0 libhtml-form-perl libhtml-parser-perl libhtml-tagset-perl libhtml-tree-perl libhttp-cookies-perl libhttp-daemon-perl libhttp-date-perl libhttp-message-perl libhttp-negotiate-perl libhx509-5-heimdal libhyphen0 libibus-1.0-5 libical3 libice6 libidn11 libiec61883-0 libieee1284-3 libijs-0.35 libimobiledevice6 libindicator3-7 libinput-bin libinput10 libio-pty-perl libio-socket-ssl-perl libipc-run-perl libipc-system-simple-perl libiptc0 libiw30 libjack-jackd2-0 libjansson4 libjavascriptcoregtk-4.0-18 libjbig0 libjbig2dec0 libjpeg-turbo8 libjson-glib-1.0-0 libjson-glib-1.0-common libk5crypto3 libkeyutils1 libklibc libkmod2 libkpathsea6 libkrb5-26-heimdal libkrb5-3 libkrb5support0 libksba8 liblangtag-common liblangtag1 liblcms2-2 liblcms2-utils libldap-2.4-2 libldap-common liblirc-client0 liblist-moreutils-perl libllvm10 libllvm6.0 liblocale-gettext-perl liblouis-data liblouisutdml-bin liblouisutdml-data libltdl7 liblua5.3-0 liblwp-mediatypes-perl liblwp-protocol-https-perl liblz4-1 liblzma5 liblzo2-2 libmagic-mgc libmagic1 libmailtools-perl libmbim-glib4 libmbim-proxy libmediaart-2.0-0 libmessaging-menu0 libmhash2 libmm-glib0 libmount1 libmozjs-52-0 libmp3lame0 libmpdec2 libmpfr6 libmpg123-0 libmspub-0.1-1 libmtdev1 libmtp-common libmtp-runtime libmtp9 libmwaw-0.3-3 libmythes-1.2-0 libnatpmp1 libnautilus-extension1a libncurses5 libncursesw5 libndp0 libneon27-gnutls libnet-dbus-perl libnet-dns-perl libnet-http-perl libnet-ip-perl libnet-libidn-perl libnet-ssleay-perl libnetfilter-conntrack3 libnetplan0 libnewt0.52 libnfnetlink0 libnghttp2-14 libnl-3-200 libnl-genl-3-200 libnm0 libnma0 libnotify-bin libnotify4 libnpth0 libnspr4 libnss-mdns libnss-myhostname libnss-systemd libnss3 libnuma1 liboauth0 libodfgen-0.1-1 libogg0 libopus0 liborc-0.4-0 libp11-kit0 libpackagekit-glib2-18 libpagemaker-0.0-0 libpam-cap libpam-gnome-keyring libpam-modules libpam-modules-bin libpam-runtime libpam-systemd libpam0g libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpangoxft-1.0-0 libpaper-utils libpaper1 libparse-debianchangelog-perl libparted-fs-resize0 libparted2 libpcap0.8 libpcaudio0 libpci3 libpciaccess0 libpcre3 libpcsclite1 libpeas-1.0-0 libpeas-common libperlio-gzip-perl libphonenumber7 libpipeline1 libpixman-1-0 libplist3 libpng16-16 libpolkit-agent-1-0 libpolkit-gobject-1-0 libpoppler-glib8 libpopt0 libproxy1-plugin-gsettings libproxy1-plugin-networkmanager libproxy1v5 libpsl5 libpulse-mainloop-glib0 libpulse0 libpulsedsp libpwquality-common libpwquality1 libpython2.7 libpython2.7-minimal libpython2.7-stdlib libpython3-stdlib libqmi-glib5 libqmi-proxy libqqwing2v5 libraptor2-0 librasqal3 librdf0 libreoffice-avmedia-backend-gstreamer libreoffice-base-core libreoffice-calc libreoffice-common libreoffice-core libreoffice-draw libreoffice-gnome libreoffice-gtk3 libreoffice-help-en-us libreoffice-impress libreoffice-math libreoffice-ogltrans libreoffice-pdfimport libreoffice-style-breeze libreoffice-style-galaxy libreoffice-style-tango libreoffice-writer librest-0.7-0 librevenge-0.0-0 librhythmbox-core10 libroken18-heimdal librsvg2-2 librsvg2-common librtmp1 libsamplerate0 libsane-common libsane-hpaio libsane1 libsasl2-2 libsasl2-modules libsasl2-modules-db libsbc1 libseccomp2 libsecret-1-0 libsecret-common libselinux1 libsemanage-common libsemanage1 libsepol1 libsgutils2-2 libshout3 libslang2 libsm6 libsmartcols1 libsmbclient libsmbios-c2 libsnapd-glib1 libsndfile1 libsnmp-base libsocket6-perl libsodium23 libsonic0 libsoup-gnome2.4-1 libsoup2.4-1 libspectre1 libspeechd2 libspeex1 libspeexdsp1 libsqlite3-0 libss2 libssh-4 libssl1.1 libstartup-notification0 libstdc++6 libstemmer0d libsub-name-perl libsuitesparseconfig5 libsysmetrics1 libsystemd0 libtag1v5 libtag1v5-vanilla libtalloc2 libtasn1-6 libtdb1 libteamdctl0 libtevent0 libtext-charwidth-perl libtext-iconv-perl libtext-wrapi18n-perl libthai-data libthai0 libtheora0 libtiff5 libtimedate-perl libtinfo5 libtotem-plparser-common libtotem-plparser18 libtotem0 libtracker-sparql-2.0-0 libtwolame0 libu2f-udev libudev1 libudisks2-0 libunistring2 libunity-protocol-private0 libunity-scopes-json-def-desktop libunity9 libunwind8 libupower-glib3 liburi-perl libusb-1.0-0 libuuid1 libv4l-0 libv4lconvert0 libvisio-0.1-1 libvisual-0.4-0 libvncclient1 libvolume-key1 libvorbis0a libvorbisenc2 libvorbisfile3 libvte-2.91-0 libvte-2.91-common libvulkan1 libwacom-bin libwacom-common libwacom2 libwavpack1 libwayland-client0 libwayland-cursor0 libwayland-egl1 libwayland-egl1-mesa libwayland-server0 libwbclient0 libwebkit2gtk-4.0-37 libwebp6 libwebpdemux2 libwebpmux3 libwebrtc-audio-processing1 libwhoopsie-preferences0 libwhoopsie0 libwind0-heimdal libwinpr2-2 libwmf0.2-7 libwmf0.2-7-gtk libwnck-3-0 libwnck-3-common libwoff1 libwpd-0.10-10 libwpg-0.3-3 libwps-0.4-4 libwrap0 libwww-perl libwww-robotrules-perl libx11-6 libx11-data libx11-xcb1 libxapian30 libxatracker2 libxau6 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-icccm4 libxcb-keysyms1 libxcb-present0 libxcb-randr0 libxcb-render-util0 libxcb-render0 libxcb-res0 libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcb-xfixes0 libxcb-xkb1 libxcb-xtest0 libxcb-xv0 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxdmcp6 libxext6 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon-x11-0 libxkbcommon0 libxkbfile1 libxklavier16 libxml-libxml-perl libxml-parser-perl libxml-sax-expat-perl libxml-sax-perl libxml-simple-perl libxml-twig-perl libxml2 libxmlb1 libxmlsec1 libxmlsec1-nss libxmu6 libxmuu1 libxpm4 libxrandr2 libxres1 libxslt1.1 libxss1 libxtables12 libxvmc1 libxxf86dga1 libxxf86vm1 libyajl2 libyaml-0-2 libyaml-libyaml-perl libyelp0 libzeitgeist-2.0-0 libzstd1 light-themes lintian linux-base linux-firmware linux-generic-hwe-18.04 linux-headers-5.4.0-113-generic linux-headers-5.4.0-150-generic linux-headers-generic-hwe-18.04 linux-image-5.4.0-113-generic linux-image-5.4.0-150-generic linux-image-generic-hwe-18.04 linux-modules-5.4.0-113-generic linux-modules-5.4.0-150-generic linux-modules-extra-5.4.0-113-generic linux-modules-extra-5.4.0-150-generic login logrotate lsb-base lsb-release lshw lsof ltrace man-db manpages mawk media-player-info memtest86+ mime-support mlocate mobile-broadband-provider-info modemmanager mount mousetweaks mscompress mtools mtr-tiny mutter mutter-common mythes-en-us nano nautilus nautilus-data nautilus-extension-gnome-terminal nautilus-sendto ncurses-base ncurses-bin netbase netcat-openbsd netplan.io network-manager network-manager-config-connectivity-ubuntu network-manager-gnome network-manager-pptp network-manager-pptp-gnome networkd-dispatcher notification-daemon ntfs-3g openprinting-ppds openssh-client openssl orca os-prober p11-kit p11-kit-modules packagekit packagekit-tools parted passwd patch pciutils pcmciautils perl perl-base perl-openssl-defaults pinentry-curses pinentry-gnome3 plymouth plymouth-label plymouth-theme-ubuntu-logo plymouth-theme-ubuntu-text policykit-1 policykit-desktop-privileges poppler-data poppler-utils popularity-contest powermgmt-base ppp pppconfig pptp-linux printer-driver-brlaser printer-driver-c2esp printer-driver-foo2zjs printer-driver-foo2zjs-common printer-driver-gutenprint printer-driver-hpcups printer-driver-m2300w printer-driver-min12xxw printer-driver-postscript-hp printer-driver-sag-gdi printer-driver-splix procps psmisc publicsuffix pulseaudio pulseaudio-module-bluetooth pulseaudio-utils python-apt-common python3 python3-apport python3-apt python3-aptdaemon python3-aptdaemon.gtk3widgets python3-asn1crypto python3-brlapi python3-cairo python3-certifi python3-cffi-backend python3-chardet python3-click python3-colorama python3-commandnotfound python3-crypto python3-cryptography python3-cups python3-cupshelpers python3-dateutil python3-dbus python3-debconf python3-debian python3-defer python3-distro-info python3-distupgrade python3-gdbm python3-gi python3-gi-cairo python3-httplib2 python3-idna python3-keyring python3-keyrings.alt python3-launchpadlib python3-lazr.restfulclient python3-lazr.uri python3-louis python3-macaroonbakery python3-mako python3-markupsafe python3-minimal python3-nacl python3-netifaces python3-oauth python3-olefile python3-pexpect python3-pil python3-pkg-resources python3-problem-report python3-protobuf python3-ptyprocess python3-pyatspi python3-pymacaroons python3-renderpm python3-reportlab python3-reportlab-accel python3-requests python3-requests-unixsocket python3-rfc3339 python3-secretstorage python3-simplejson python3-six python3-software-properties python3-speechd python3-systemd python3-tz python3-uno python3-update-manager python3-urllib3 python3-wadllib python3-xdg python3-xkit python3-yaml python3-zope.interface qpdf readline-common remmina remmina-common remmina-plugin-rdp remmina-plugin-secret remmina-plugin-vnc rfkill rhythmbox rhythmbox-data rhythmbox-plugin-alternative-toolbar rhythmbox-plugins rsync rsyslog rtkit samba-libs sane-utils sbsigntool seahorse secureboot-db sed sensible-utils session-migration shared-mime-info shotwell shotwell-common simple-scan snapd software-properties-common software-properties-gtk sound-icons speech-dispatcher speech-dispatcher-audio-plugins speech-dispatcher-espeak-ng spice-vdagent squashfs-tools strace sudo syslinux syslinux-common system-config-printer system-config-printer-common system-config-printer-udev systemd systemd-sysv sysvinit-utils t1utils tar tcpdump telnet thermald thunderbird thunderbird-gnome-support thunderbird-locale-en thunderbird-locale-en-us totem totem-common totem-plugins transmission-common transmission-gtk tzdata ubuntu-advantage-desktop-daemon ubuntu-advantage-tools ubuntu-artwork ubuntu-desktop ubuntu-docs ubuntu-drivers-common ubuntu-keyring ubuntu-minimal ubuntu-mono ubuntu-pro-client ubuntu-pro-client-l10n ubuntu-release-upgrader-core ubuntu-release-upgrader-gtk ubuntu-report ubuntu-session ubuntu-settings ubuntu-software ubuntu-sounds ubuntu-standard ubuntu-system-service ubuntu-wallpapers ubuntu-wallpapers-bionic ucf udev udisks2 ufw unattended-upgrades unzip update-inetd update-manager update-manager-core update-notifier update-notifier-common upower ure usb-creator-common usb-creator-gtk usb-modeswitch usb-modeswitch-data usbmuxd usbutils util-linux uuid-runtime vim-common vim-tiny vino wamerican wbritish wget whiptail whoopsie whoopsie-preferences wireless-regdb wireless-tools wpasupplicant x11-apps x11-common x11-session-utils x11-utils x11-xkb-utils x11-xserver-utils xauth xbrlapi xcursor-themes xdg-desktop-portal xdg-desktop-portal-gtk xdg-user-dirs xdg-user-dirs-gtk xdg-utils xfonts-base xfonts-encodings xinit xinput xkb-data xorg xserver-common xserver-xephyr xserver-xorg-core-hwe-18.04 xserver-xorg-hwe-18.04 xserver-xorg-input-all-hwe-18.04 xserver-xorg-input-libinput-hwe-18.04 xserver-xorg-input-wacom-hwe-18.04 xserver-xorg-legacy-hwe-18.04 xserver-xorg-video-all-hwe-18.04 xserver-xorg-video-amdgpu-hwe-18.04 xserver-xorg-video-ati-hwe-18.04 xserver-xorg-video-fbdev-hwe-18.04 xserver-xorg-video-intel-hwe-18.04 xserver-xorg-video-nouveau-hwe-18.04 xserver-xorg-video-qxl-hwe-18.04 xserver-xorg-video-radeon-hwe-18.04 xserver-xorg-video-vesa-hwe-18.04 xserver-xorg-video-vmware-hwe-18.04 xwayland xxd xz-utils yelp yelp-xsl zeitgeist-core zenity zenity-common zlib1g
+2024-05-17 12:08:48,359 DEBUG cache aufs_rw_dir: /tmp/
+2024-05-17 12:08:48,359 DEBUG Free space on /: 78731599872
+2024-05-17 12:08:48,359 DEBUG Dir /usr mounted on /
+2024-05-17 12:08:48,359 DEBUG Dir /var mounted on /
+2024-05-17 12:08:48,359 DEBUG Dir /boot mounted on /
+2024-05-17 12:08:48,359 DEBUG Dir /var/cache/apt/archives mounted on /
+2024-05-17 12:08:48,359 DEBUG Dir /tmp mounted on /
+2024-05-17 12:08:48,360 DEBUG Free space on /home: 206090686464
+2024-05-17 12:08:48,360 DEBUG Dir /tmp mounted on /
+2024-05-17 12:08:48,360 DEBUG fs_free contains: '{'/': <DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0e55ef0>, '/usr': <DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0e55ef0>, '/var': <DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0e55ef0>, '/boot': <DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0e55ef0>, '/var/cache/apt/archives': <DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0e55ef0>, '/tmp': <DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0e55ef0>, '/home': <DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0e55c88>}'
+2024-05-17 12:08:48,981 DEBUG linux-image-5.4.0-113-generic (new-install) added with 16855640 to boot space
+2024-05-17 12:08:48,982 DEBUG linux-image-5.4.0-150-generic (new-install) added with 16855640 to boot space
+2024-05-17 12:08:48,983 DEBUG linux-image-5.4.0-182-generic (new-install) added with 16855640 to boot space
+2024-05-17 12:08:50,500 DEBUG dir '/var/cache/apt/archives' needs '0' of '<DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0e55ef0>' (78731599872.000000)
+2024-05-17 12:08:50,503 DEBUG dir '/usr' needs '1885470720' of '<DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0e55ef0>' (78731599872.000000)
+2024-05-17 12:08:50,503 DEBUG dir '/var' needs '13553664' of '<DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0e55ef0>' (76846129152.000000)
+2024-05-17 12:08:50,503 DEBUG dir '/usr' needs '52428800' of '<DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0e55ef0>' (76832575488.000000)
+2024-05-17 12:08:50,503 DEBUG dir '/boot' needs '242296138.8' of '<DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0e55ef0>' (76780146688.000000)
+2024-05-17 12:08:50,503 DEBUG dir '/tmp' needs '5242880' of '<DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0e55ef0>' (76537850549.199997)
+2024-05-17 12:08:50,503 DEBUG dir '/' needs '10485760' of '<DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0e55ef0>' (76532607669.199997)
+2024-05-17 12:08:50,503 DEBUG dir '/tmp' needs '0.0' of '<DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0e55ef0>' (76522121909.199997)
+2024-05-17 12:08:50,503 DEBUG dir '/usr' needs '0.0' of '<DistUpgrade.DistUpgradeCache.MyCache.checkFreeSpace.<locals>.FreeSpace object at 0x7f13c0e55ef0>' (76522121909.199997)
+2024-05-17 12:08:50,503 DEBUG Not an UEFI system
+2024-05-17 12:08:50,538 DEBUG demoted: 'libdbusmenu-gtk4 libegl1-mesa libllvm6.0'
+2024-05-17 12:08:50,538 DEBUG found components: {'focal': {'multiverse', 'main', 'restricted', 'universe'}, 'focal-updates': {'multiverse', 'main', 'restricted', 'universe'}, 'focal-security': {'multiverse', 'main', 'restricted', 'universe'}}
+2024-05-17 12:08:50,541 DEBUG quirks: running StartUpgrade
+2024-05-17 12:08:50,542 DEBUG running Quirks.StartUpgrade
+2024-05-17 12:08:50,542 DEBUG skipping 'README' (no '.')
+2024-05-17 12:08:50,542 DEBUG killing update-notifier
+2024-05-17 12:08:50,557 DEBUG killing kblueplugd kbluetooth4
+2024-05-17 12:08:50,570 DEBUG killing gnome-screensaver
+2024-05-17 12:08:50,583 DEBUG setup poke timer for the screensaver
+2024-05-17 12:08:50,588 DEBUG _fipsLibgcryptDivert
+2024-05-17 12:08:50,589 DEBUG System is not fips enabled, no dpkg-divert needed
+2024-05-17 12:08:50,590 INFO cache.commit()
+2024-05-17 13:03:47,130 DEBUG cache.commit() returned None
+2024-05-17 13:03:47,470 DEBUG openCache()
+2024-05-17 13:03:52,177 DEBUG Comparing 5.4.0-113 with 
+2024-05-17 13:03:52,178 DEBUG Comparing 5.4.0-150 with 5.4.0-113
+2024-05-17 13:03:52,179 DEBUG Comparing 5.4.0-182 with 5.4.0-150
+2024-05-17 13:03:52,703 DEBUG /openCache(), new cache size 96441
+2024-05-17 13:03:52,703 DEBUG quirks: running focalPostUpgrade
+2024-05-17 13:03:52,704 DEBUG running Quirks.focalPostUpgrade
+2024-05-17 13:03:54,632 DEBUG refresh of snap core18 succeeded
+2024-05-17 13:03:56,018 DEBUG refresh of snap gnome-3-34-1804 succeeded
+2024-05-17 13:03:57,427 DEBUG refresh of snap gtk-common-themes succeeded
+2024-05-17 13:04:33,881 DEBUG install of snap snap-store succeeded
+2024-05-17 13:04:35,393 DEBUG refresh of snap gnome-calculator succeeded
+2024-05-17 13:04:36,315 DEBUG refresh of snap gnome-characters succeeded
+2024-05-17 13:04:37,307 DEBUG refresh of snap gnome-logs succeeded
+2024-05-17 13:04:38,164 DEBUG refresh of snap gnome-system-monitor succeeded
+2024-05-17 13:04:42,403 DEBUG Obsolete: command-not-found-data gir1.2-mutter-2 google-chrome-stable libbind9-160 libboost-date-time1.65.1 libboost-filesystem1.65.1 libboost-iostreams1.65.1 libboost-locale1.65.1 libboost-system1.65.1 libboost-thread1.65.1 libbrlapi0.6 libcamel-1.2-61 libcdio17 libdns-export1100 libdns1100 libebook-contacts-1.2-2 libecal-1.2-19 libedataserver-1.2-23 libevent-2.1-6 libexempi3 libexiv2-14 libffi6 libgdbm5 libgnome-desktop-3-17 libgspell-1-1 libgutenprint2 libgweather-3-15 libhogweed4 libhunspell-1.6-0 libicu60 libilmbase12 libip4tc0 libip6tc0 libirs160 libisc-export169 libisc169 libisccc160 libisccfg160 libisl19 libjson-c3 liblouis14 liblouisutdml8 liblwres160 libmagickcore-6.q16-3 libmagickcore-6.q16-3-extra libmagickwand-6.q16-3 libminiupnpc10 libmutter-2-0 libnettle6 libnih1 libntfs-3g88 libopenexr22 liborcus-0.13-0 libperl5.26 libplymouth4 libpoppler73 libprocps6 libprotobuf10 libpython3.6 libpython3.6-minimal libpython3.6-stdlib libqpdf21 libraw16 libreadline7 libssl1.0.0 libusbmuxd4 libvpx5 linux-hwe-5.4-headers-5.4.0-104 linux-hwe-5.4-headers-5.4.0-113 linux-hwe-5.4-headers-5.4.0-150 linux-hwe-5.4-headers-5.4.0-42 linux-hwe-5.4-headers-5.4.0-53 linux-hwe-5.4-headers-5.4.0-58 linux-hwe-5.4-headers-5.4.0-65 linux-hwe-5.4-headers-5.4.0-72 linux-hwe-5.4-headers-5.4.0-81 multiarch-support nplan perl-modules-5.26 python-talloc python3.6 python3.6-minimal ubuntu-web-launchers ureadahead zoom
+2024-05-17 13:04:42,403 DEBUG Foreign: 
+2024-05-17 13:04:42,404 DEBUG forced_obsoletes: ['gnome-software', 'desktop-effects', 'gnome-app-install', 'policykit-gnome', 'gnome-mount']
+2024-05-17 13:04:43,356 DEBUG Unused dependencies: libnss-myhostname libncurses5 libmutter-2-0 libisc-export169 libb-hooks-op-check-perl gsfonts libminiupnpc10 libvpx5 libip4tc0 imagemagick-6-common libcpanel-json-xs-perl libopenexr24 guile-2.0-libs libllvm10 libnetpbm10 libparse-debianchangelog-perl librole-tiny-perl libc-dev-bin libcgi-pm-perl libbind9-160 linux-hwe-5.4-headers-5.4.0-150 libmodule-implementation-perl gir1.2-gtksource-3.0 ubuntu-system-service libio-pty-perl python3-oauth imagemagick libapt-pkg-perl liblqr-1-0 libasan5 libperl4-corelibs-perl libperlio-gzip-perl libunicode-utf8-perl nplan patchutils libubsan1 printer-driver-gutenprint libsub-exporter-progressive-perl mlocate libgspell-1-1 liblist-moreutils-perl libecal-1.2-19 python3-keyrings.alt libcamel-1.2-61 libfcgi-perl libreadonly-perl iputils-arping libpackage-stash-perl xserver-xorg-video-intel-hwe-18.04 gcc-8-base xserver-xorg-video-vmware-hwe-18.04 libtest-fatal-perl fwupdate libcrypt-dev libreoffice-style-galaxy libxml-sax-base-perl libalgorithm-diff-xs-perl libboost-date-time1.65.1 libprotobuf10 linux-headers-generic libfont-ttf-perl libexempi3 libfakeroot libgnome-desktop-3-17 libipc-run-perl libisl19 liblsan0 libmagickwand-6.q16-6 libnet-dns-perl libnumber-compare-perl libpython3.6-minimal liblouis14 libstrictures-perl cpp-7 libbrlapi0.6 libnettle6 libvariable-magic-perl dpkg-dev xserver-xorg-video-all-hwe-18.04 libperl5.26 libebook-contacts-1.2-2 g++-9 libquadmath0 fakeroot libdevel-size-perl ifupdown xserver-xorg-video-vesa-hwe-18.04 libb-hooks-endofscope-perl libpython2.7-stdlib libtype-tiny-xs-perl libedataserver-1.2-23 perl-modules-5.26 libraw16 libalgorithm-merge-perl libdigest-bubblebabble-perl liblwres160 build-essential xserver-xorg-input-libinput-hwe-18.04 libirs160 liblinux-epoll-perl xserver-xorg-video-radeon-hwe-18.04 gcc-9 linux-hwe-5.4-headers-5.4.0-42 binutils libindicator3-7 linux-hwe-5.4-headers-5.4.0-65 manpages-dev libalgorithm-diff-perl g++ xserver-xorg-input-all-hwe-18.04 libboost-thread1.65.1 libmagickcore-6.q16-6 pppoeconf qpdf libmagickcore-6.q16-3-extra example-content geoip-database libctf-nobfd0 linux-generic-hwe-18.04 zeitgeist-core libpoppler73 liboauth0 libitm1 libstruct-dumb-perl python3.6 linux-hwe-5.4-headers-5.4.0-113 libgtksourceview-3.0-common libboost-iostreams1.65.1 linux-hwe-5.4-headers-5.4.0-81 libyaml-libyaml-perl linux-headers-generic-hwe-18.04 libgcc-9-dev xserver-xorg-input-wacom-hwe-18.04 libmagickwand-6.q16-3 xserver-xorg-video-amdgpu-hwe-18.04 libctf0 libzeitgeist-2.0-0 libclass-xsaccessor-perl libcdio17 libmagickcore-6.q16-6-extra libfftw3-double3 linux-modules-5.4.0-113-generic libasync-mergepoint-perl multiarch-support libclass-accessor-perl libsereal-encoder-perl gcc-7-base light-themes libboost-system1.65.1 xserver-xorg-legacy-hwe-18.04 libgutenprint9 xserver-xorg-video-ati-hwe-18.04 linux-headers-5.4.0-113-generic libsane1 linux-image-5.4.0-113-generic libdigest-hmac-perl liblouisutdml8 imagemagick-6.q16 xserver-xorg-core-hwe-18.04 libpython3.6-stdlib libreoffice-avmedia-backend-gstreamer libffi6 libsereal-decoder-perl command-not-found-data libgail-3-0 libsub-quote-perl libenchant1c2a libsub-identify-perl python3.6-minimal xserver-xorg-video-nouveau-hwe-18.04 t1utils libdns-export1100 xserver-xorg-video-fbdev-hwe-18.04 libgdbm5 libsub-name-perl libilmbase12 python-talloc ubuntu-wallpapers-bionic libicu60 libparams-classify-perl libfile-find-rule-perl libgutenprint2 libc6-dev libcroco3 adium-theme-ubuntu binutils-common libpython2.7 libssl1.0.0 linux-image-generic-hwe-18.04 ubuntu-software libfuture-perl libargon2-0 libdynaloader-functions-perl libdns1100 libtext-levenshtein-perl gnome-user-guide libxml-namespacesupport-perl libgeoip1 lintian python3-crypto ubuntu-artwork libopenexr22 libxmlb1 libio-string-perl libevent-2.1-6 libxml-sax-expat-perl libclass-method-modifiers-perl make liblist-compare-perl gcc ubuntu-sounds libboost-locale1.65.1 intltool-debian libexporter-tiny-perl libimport-into-perl libjson-c3 liborcus-0.13-0 libcgi-fast-perl libio-async-perl libtinfo5 diffstat pppconfig linux-hwe-5.4-headers-5.4.0-53 libxml-sax-perl libxml-libxml-perl libclone-perl libtest-refcount-perl libgutenprint-common libgweather-3-15 libxapian30 libsereal-perl xserver-xorg-hwe-18.04 libref-util-perl libilmbase24 libtype-tiny-perl libusbmuxd4 binutils-x86-64-linux-gnu libaudio2 gir1.2-goa-1.0 gettext libtsan0 libfile-copy-recursive-perl libisccfg160 libxml-simple-perl enchant netpbm linux-headers-5.4.0-113 libisccc160 libmoo-perl linux-libc-dev libhogweed4 libmoox-aliases-perl libstdc++-9-dev libmagickcore-6.q16-3 python3-asn1crypto libemail-valid-perl libpython2.7-minimal libgmime-3.0-0 libqpdf21 libisc169 libiptc0 libpackage-stash-xs-perl linux-generic linux-hwe-5.4-headers-5.4.0-72 python3-zope.interface libxml-writer-perl libnet-domain-tld-perl libip6tc0 libntfs-3g88 libcapture-tiny-perl linux-modules-extra-5.4.0-113-generic libio-async-loop-epoll-perl libref-util-xs-perl libpython3.6 linux-hwe-5.4-headers-5.4.0-58 libpath-tiny-perl gir1.2-mutter-2 libexiv2-14 linux-hwe-5.4-headers-5.4.0-104 libmozjs-52-0 xserver-xorg-video-qxl-hwe-18.04 libncursesw5 libreadline7 libdevel-callchecker-perl libtext-glob-perl libarchive-zip-perl libnet-ip-perl libmodule-runtime-perl libhunspell-1.6-0 libnet-dns-sec-perl libart-2.0-2 libbinutils libboost-filesystem1.65.1 libnamespace-clean-perl libgtksourceview-3.0-1 libjson-maybexs-perl libplymouth4
+2024-05-17 13:04:43,356 DEBUG remove_candidates: '{'libncurses5', 'gsfonts', 'libminiupnpc10', 'libip4tc0', 'libcpanel-json-xs-perl', 'libprocps6', 'guile-2.0-libs', 'librole-tiny-perl', 'linux-hwe-5.4-headers-5.4.0-150', 'gir1.2-gtksource-3.0', 'ubuntu-system-service', 'libasan5', 'nplan', 'libperlio-gzip-perl', 'libunicode-utf8-perl', 'patchutils', 'libubsan1', 'libsub-exporter-progressive-perl', 'mlocate', 'libgspell-1-1', 'python3-keyrings.alt', 'libcamel-1.2-61', 'libreadonly-perl', 'iputils-arping', 'libpackage-stash-perl', 'fwupdate', 'libcrypt-dev', 'libreoffice-style-galaxy', 'libxml-sax-base-perl', 'linux-headers-generic', 'libprotobuf10', 'libfont-ttf-perl', 'libexempi3', 'libfakeroot', 'libmagickwand-6.q16-6', 'liblsan0', 'libnumber-compare-perl', 'libstrictures-perl', 'cpp-7', 'libbrlapi0.6', 'libvariable-magic-perl', 'dpkg-dev', 'xserver-xorg-video-all-hwe-18.04', 'libperl5.26', 'xserver-xorg-video-vesa-hwe-18.04', 'libpython2.7-stdlib', 'ubuntu-web-launchers', 'policykit-gnome', 'perl-modules-5.26', 'libraw16', 'libalgorithm-merge-perl', 'libdigest-bubblebabble-perl', 'libirs160', 'xserver-xorg-video-radeon-hwe-18.04', 'linux-hwe-5.4-headers-5.4.0-42', 'linux-hwe-5.4-headers-5.4.0-65', 'libindicator3-7', 'gnome-software', 'libboost-thread1.65.1', 'libmagickcore-6.q16-6', 'libctf-nobfd0', 'zeitgeist-core', 'linux-generic-hwe-18.04', 'python3.6', 'libstruct-dumb-perl', 'linux-hwe-5.4-headers-5.4.0-113', 'libgtksourceview-3.0-common', 'google-chrome-stable', 'xserver-xorg-input-wacom-hwe-18.04', 'gnome-app-install', 'libclass-xsaccessor-perl', 'libcdio17', 'libmagickcore-6.q16-6-extra', 'libasync-mergepoint-perl', 'libclass-accessor-perl', 'gcc-7-base', 'light-themes', 'libboost-system1.65.1', 'xserver-xorg-legacy-hwe-18.04', 'xserver-xorg-video-ati-hwe-18.04', 'linux-headers-5.4.0-113-generic', 'liblouisutdml8', 'imagemagick-6.q16', 'libpython3.6-stdlib', 'command-not-found-data', 'python3.6-minimal', 'libenchant1c2a', 'libdns-export1100', 'libilmbase12', 'python-talloc', 'libicu60', 'libc6-dev', 'libpython2.7', 'linux-image-generic-hwe-18.04', 'libssl1.0.0', 'libfuture-perl', 'libdynaloader-functions-perl', 'libdns1100', 'libxml-namespacesupport-perl', 'lintian', 'libnih1', 'libopenexr22', 'libxmlb1', 'libevent-2.1-6', 'libxml-sax-expat-perl', 'libclass-method-modifiers-perl', 'make', 'liblist-compare-perl', 'gcc', 'ubuntu-sounds', 'libexporter-tiny-perl', 'intltool-debian', 'libimport-into-perl', 'linux-hwe-5.4-headers-5.4.0-53', 'libtest-refcount-perl', 'xserver-xorg-hwe-18.04', 'libref-util-perl', 'libilmbase24', 'libtype-tiny-perl', 'libusbmuxd4', 'binutils-x86-64-linux-gnu', 'libaudio2', 'gir1.2-goa-1.0', 'gettext', 'libtsan0', 'libfile-copy-recursive-perl', 'libxml-simple-perl', 'netpbm', 'enchant', 'linux-headers-5.4.0-113', 'libisccc160', 'libmoo-perl', 'libhogweed4', 'libstdc++-9-dev', 'python3-asn1crypto', 'libemail-valid-perl', 'libqpdf21', 'libpython2.7-minimal', 'libgmime-3.0-0', 'python3-zope.interface', 'libpackage-stash-xs-perl', 'linux-generic', 'libntfs-3g88', 'libio-async-loop-epoll-perl', 'libref-util-xs-perl', 'libpath-tiny-perl', 'gir1.2-mutter-2', 'libexiv2-14', 'libmozjs-52-0', 'libncursesw5', 'libdevel-callchecker-perl', 'libmodule-runtime-perl', 'libart-2.0-2', 'libnamespace-clean-perl', 'libjson-maybexs-perl', 'libnss-myhostname', 'libmutter-2-0', 'libisc-export169', 'libvpx5', 'libb-hooks-op-check-perl', 'libparse-debianchangelog-perl', 'imagemagick-6-common', 'libopenexr24', 'libllvm10', 'libnetpbm10', 'libc-dev-bin', 'libcgi-pm-perl', 'libbind9-160', 'desktop-effects', 'libmodule-implementation-perl', 'libio-pty-perl', 'python3-oauth', 'imagemagick', 'libapt-pkg-perl', 'liblqr-1-0', 'libperl4-corelibs-perl', 'printer-driver-gutenprint', 'liblist-moreutils-perl', 'libecal-1.2-19', 'libfcgi-perl', 'xserver-xorg-video-intel-hwe-18.04', 'gcc-8-base', 'xserver-xorg-video-vmware-hwe-18.04', 'libtest-fatal-perl', 'libalgorithm-diff-xs-perl', 'libboost-date-time1.65.1', 'libisl19', 'libipc-run-perl', 'libgnome-desktop-3-17', 'libnet-dns-perl', 'libpython3.6-minimal', 'liblouis14', 'libnettle6', 'libebook-contacts-1.2-2', 'g++-9', 'libquadmath0', 'fakeroot', 'libdevel-size-perl', 'ifupdown', 'libb-hooks-endofscope-perl', 'libtype-tiny-xs-perl', 'libedataserver-1.2-23', 'liblwres160', 'build-essential', 'xserver-xorg-input-libinput-hwe-18.04', 'liblinux-epoll-perl', 'ureadahead', 'gcc-9', 'binutils', 'manpages-dev', 'libalgorithm-diff-perl', 'g++', 'xserver-xorg-input-all-hwe-18.04', 'pppoeconf', 'qpdf', 'libmagickcore-6.q16-3-extra', 'example-content', 'geoip-database', 'libpoppler73', 'liboauth0', 'libitm1', 'libboost-iostreams1.65.1', 'linux-hwe-5.4-headers-5.4.0-81', 'libyaml-libyaml-perl', 'linux-headers-generic-hwe-18.04', 'libgcc-9-dev', 'libmagickwand-6.q16-3', 'xserver-xorg-video-amdgpu-hwe-18.04', 'libctf0', 'libzeitgeist-2.0-0', 'libfftw3-double3', 'linux-modules-5.4.0-113-generic', 'multiarch-support', 'libsereal-encoder-perl', 'libgutenprint9', 'libsane1', 'linux-image-5.4.0-113-generic', 'libdigest-hmac-perl', 'xserver-xorg-core-hwe-18.04', 'libreoffice-avmedia-backend-gstreamer', 'libffi6', 'libsereal-decoder-perl', 'libsub-quote-perl', 'libgail-3-0', 'libsub-identify-perl', 'xserver-xorg-video-nouveau-hwe-18.04', 't1utils', 'xserver-xorg-video-fbdev-hwe-18.04', 'libgdbm5', 'libsub-name-perl', 'ubuntu-wallpapers-bionic', 'libparams-classify-perl', 'libgutenprint2', 'libfile-find-rule-perl', 'libcroco3', 'adium-theme-ubuntu', 'binutils-common', 'ubuntu-software', 'libargon2-0', 'libtext-levenshtein-perl', 'ubuntu-artwork', 'python3-crypto', 'gnome-user-guide', 'libgeoip1', 'libio-string-perl', 'libboost-locale1.65.1', 'libjson-c3', 'liborcus-0.13-0', 'libtinfo5', 'pppconfig', 'libcgi-fast-perl', 'libio-async-perl', 'diffstat', 'libxml-sax-perl', 'libxml-libxml-perl', 'libclone-perl', 'libxapian30', 'libgutenprint-common', 'libgweather-3-15', 'libsereal-perl', 'libisccfg160', 'linux-libc-dev', 'libmoox-aliases-perl', 'libmagickcore-6.q16-3', 'gnome-mount', 'linux-hwe-5.4-headers-5.4.0-72', 'libisc169', 'libiptc0', 'libxml-writer-perl', 'libnet-domain-tld-perl', 'libip6tc0', 'libcapture-tiny-perl', 'linux-modules-extra-5.4.0-113-generic', 'linux-hwe-5.4-headers-5.4.0-58', 'libpython3.6', 'xserver-xorg-video-qxl-hwe-18.04', 'linux-hwe-5.4-headers-5.4.0-104', 'libreadline7', 'libtext-glob-perl', 'libarchive-zip-perl', 'libnet-ip-perl', 'libhunspell-1.6-0', 'libnet-dns-sec-perl', 'libboost-filesystem1.65.1', 'libplymouth4', 'libbinutils', 'libgtksourceview-3.0-1'}'
+2024-05-17 13:04:43,356 DEBUG Start checking for obsolete pkgs
+2024-05-17 13:04:49,874 DEBUG package 'linux-headers-generic' produces an unwanted removal 'linux-generic', skipping
+2024-05-17 13:04:50,971 DEBUG 'linux-headers-generic' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:04:51,078 DEBUG package 'libprotobuf10' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:04:52,181 DEBUG 'libprotobuf10' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:04:52,287 DEBUG package 'libfont-ttf-perl' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:04:53,491 DEBUG 'libfont-ttf-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:04:53,597 DEBUG package 'libexempi3' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:04:54,711 DEBUG 'libexempi3' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:04:54,934 DEBUG package 'libfakeroot' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:04:56,076 DEBUG 'libfakeroot' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:04:56,301 DEBUG package 'libmagickwand-6.q16-6' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:04:57,430 DEBUG 'libmagickwand-6.q16-6' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:04:57,535 DEBUG package 'liblsan0' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:04:58,662 DEBUG 'liblsan0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:04:58,886 DEBUG package 'libnumber-compare-perl' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:00,027 DEBUG 'libnumber-compare-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:00,135 DEBUG package 'libstrictures-perl' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:01,247 DEBUG 'libstrictures-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:01,354 DEBUG package 'cpp-7' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:02,523 DEBUG 'cpp-7' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:02,629 DEBUG package 'libbrlapi0.6' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:03,755 DEBUG 'libbrlapi0.6' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:03,868 DEBUG package 'libvariable-magic-perl' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:05,020 DEBUG 'libvariable-magic-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:05,126 DEBUG package 'dpkg-dev' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:06,230 DEBUG 'dpkg-dev' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:06,335 DEBUG package 'xserver-xorg-video-all-hwe-18.04' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:07,451 DEBUG 'xserver-xorg-video-all-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:07,557 DEBUG package 'libperl5.26' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:08,660 DEBUG 'libperl5.26' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:08,767 DEBUG package 'xserver-xorg-video-vesa-hwe-18.04' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:09,991 DEBUG 'xserver-xorg-video-vesa-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:10,217 DEBUG package 'libpython2.7-stdlib' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:11,401 DEBUG 'libpython2.7-stdlib' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:11,509 DEBUG package 'ubuntu-web-launchers' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:12,632 DEBUG 'ubuntu-web-launchers' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:12,874 DEBUG package 'perl-modules-5.26' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:14,042 DEBUG 'perl-modules-5.26' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:14,147 DEBUG package 'libraw16' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:15,284 DEBUG 'libraw16' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:15,390 DEBUG package 'libalgorithm-merge-perl' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:16,561 DEBUG 'libalgorithm-merge-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:16,666 DEBUG package 'libdigest-bubblebabble-perl' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:17,792 DEBUG 'libdigest-bubblebabble-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:17,898 DEBUG package 'libirs160' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:19,059 DEBUG 'libirs160' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:19,165 DEBUG package 'xserver-xorg-video-radeon-hwe-18.04' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:20,269 DEBUG 'xserver-xorg-video-radeon-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:20,374 DEBUG package 'linux-hwe-5.4-headers-5.4.0-42' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:21,501 DEBUG 'linux-hwe-5.4-headers-5.4.0-42' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:21,606 DEBUG package 'linux-hwe-5.4-headers-5.4.0-65' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:22,810 DEBUG 'linux-hwe-5.4-headers-5.4.0-65' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:22,916 DEBUG package 'libindicator3-7' produces an unwanted removal 'libjson-xs-perl', skipping
+2024-05-17 13:05:24,053 DEBUG 'libindicator3-7' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:24,530 DEBUG package 'libboost-thread1.65.1' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:25,895 DEBUG 'libboost-thread1.65.1' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:26,122 DEBUG package 'libmagickcore-6.q16-6' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:27,337 DEBUG 'libmagickcore-6.q16-6' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:27,567 DEBUG package 'libctf-nobfd0' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:28,802 DEBUG 'libctf-nobfd0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:28,907 DEBUG package 'zeitgeist-core' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:30,123 DEBUG 'zeitgeist-core' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:30,227 DEBUG package 'linux-generic-hwe-18.04' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:31,487 DEBUG 'linux-generic-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:31,610 DEBUG package 'python3.6' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:32,875 DEBUG 'python3.6' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:33,099 DEBUG package 'libstruct-dumb-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:34,361 DEBUG 'libstruct-dumb-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:34,466 DEBUG package 'linux-hwe-5.4-headers-5.4.0-113' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:35,726 DEBUG 'linux-hwe-5.4-headers-5.4.0-113' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:35,949 DEBUG package 'libgtksourceview-3.0-common' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:37,180 DEBUG 'libgtksourceview-3.0-common' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:37,287 DEBUG package 'xserver-xorg-input-wacom-hwe-18.04' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:38,500 DEBUG 'xserver-xorg-input-wacom-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:38,606 DEBUG package 'libclass-xsaccessor-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:39,832 DEBUG 'libclass-xsaccessor-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:39,938 DEBUG package 'libcdio17' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:41,164 DEBUG 'libcdio17' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:41,269 DEBUG package 'libmagickcore-6.q16-6-extra' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:42,562 DEBUG 'libmagickcore-6.q16-6-extra' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:42,666 DEBUG package 'libasync-mergepoint-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:43,882 DEBUG 'libasync-mergepoint-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:44,106 DEBUG package 'libclass-accessor-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:45,314 DEBUG 'libclass-accessor-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:45,535 DEBUG package 'gcc-7-base' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:46,734 DEBUG 'gcc-7-base' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:46,955 DEBUG package 'light-themes' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:48,221 DEBUG 'light-themes' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:48,445 DEBUG package 'libboost-system1.65.1' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:49,697 DEBUG 'libboost-system1.65.1' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:49,803 DEBUG package 'xserver-xorg-legacy-hwe-18.04' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:51,051 DEBUG 'xserver-xorg-legacy-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:51,155 DEBUG package 'xserver-xorg-video-ati-hwe-18.04' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:52,382 DEBUG 'xserver-xorg-video-ati-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:52,488 DEBUG package 'linux-headers-5.4.0-113-generic' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:53,758 DEBUG 'linux-headers-5.4.0-113-generic' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:53,865 DEBUG package 'liblouisutdml8' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:55,078 DEBUG 'liblouisutdml8' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:55,300 DEBUG package 'imagemagick-6.q16' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:56,499 DEBUG 'imagemagick-6.q16' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:56,721 DEBUG package 'libpython3.6-stdlib' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:57,942 DEBUG 'libpython3.6-stdlib' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:58,046 DEBUG package 'command-not-found-data' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:05:59,273 DEBUG 'command-not-found-data' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:05:59,498 DEBUG package 'python3.6-minimal' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:00,793 DEBUG 'python3.6-minimal' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:01,016 DEBUG package 'libenchant1c2a' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:02,302 DEBUG 'libenchant1c2a' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:02,407 DEBUG package 'libdns-export1100' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:03,656 DEBUG 'libdns-export1100' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:03,880 DEBUG package 'libilmbase12' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:05,198 DEBUG 'libilmbase12' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:05,303 DEBUG package 'python-talloc' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:06,541 DEBUG 'python-talloc' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:06,762 DEBUG package 'libicu60' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:08,017 DEBUG 'libicu60' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:08,123 DEBUG package 'libc6-dev' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:09,348 DEBUG 'libc6-dev' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:09,570 DEBUG package 'libpython2.7' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:10,902 DEBUG 'libpython2.7' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:11,008 DEBUG package 'linux-image-generic-hwe-18.04' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:12,223 DEBUG 'linux-image-generic-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:12,327 DEBUG package 'libssl1.0.0' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:13,543 DEBUG 'libssl1.0.0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:13,764 DEBUG package 'libfuture-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:15,008 DEBUG 'libfuture-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:15,246 DEBUG package 'libdynaloader-functions-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:16,461 DEBUG 'libdynaloader-functions-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:16,684 DEBUG package 'libdns1100' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:17,959 DEBUG 'libdns1100' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:18,067 DEBUG package 'libxml-namespacesupport-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:19,335 DEBUG 'libxml-namespacesupport-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:19,444 DEBUG package 'lintian' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:20,645 DEBUG 'lintian' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:20,867 DEBUG package 'libnih1' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:22,087 DEBUG 'libnih1' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:22,308 DEBUG package 'libopenexr22' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:23,530 DEBUG 'libopenexr22' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:23,636 DEBUG package 'libxmlb1' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:24,850 DEBUG 'libxmlb1' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:24,956 DEBUG package 'libevent-2.1-6' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:26,204 DEBUG 'libevent-2.1-6' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:26,310 DEBUG package 'libxml-sax-expat-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:27,602 DEBUG 'libxml-sax-expat-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:27,707 DEBUG package 'libclass-method-modifiers-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:28,971 DEBUG 'libclass-method-modifiers-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:29,196 DEBUG package 'make' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:30,445 DEBUG 'make' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:30,550 DEBUG package 'liblist-compare-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:31,799 DEBUG 'liblist-compare-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:31,907 DEBUG package 'gcc' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:33,119 DEBUG 'gcc' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:33,225 DEBUG package 'ubuntu-sounds' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:34,484 DEBUG 'ubuntu-sounds' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:34,707 DEBUG package 'libexporter-tiny-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:35,949 DEBUG 'libexporter-tiny-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:36,054 DEBUG package 'intltool-debian' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:37,292 DEBUG 'intltool-debian' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:37,397 DEBUG package 'libimport-into-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:38,656 DEBUG 'libimport-into-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:38,762 DEBUG package 'linux-hwe-5.4-headers-5.4.0-53' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:39,988 DEBUG 'linux-hwe-5.4-headers-5.4.0-53' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:40,094 DEBUG package 'libtest-refcount-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:41,297 DEBUG 'libtest-refcount-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:41,402 DEBUG package 'xserver-xorg-hwe-18.04' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:42,629 DEBUG 'xserver-xorg-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:42,734 DEBUG package 'libref-util-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:43,994 DEBUG 'libref-util-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:44,222 DEBUG package 'libilmbase24' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:45,436 DEBUG 'libilmbase24' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:45,542 DEBUG package 'libtype-tiny-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:46,768 DEBUG 'libtype-tiny-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:46,874 DEBUG package 'libusbmuxd4' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:48,088 DEBUG 'libusbmuxd4' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:48,315 DEBUG package 'binutils-x86-64-linux-gnu' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:49,586 DEBUG 'binutils-x86-64-linux-gnu' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:49,693 DEBUG package 'libaudio2' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:50,973 DEBUG 'libaudio2' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:51,079 DEBUG package 'gir1.2-goa-1.0' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:52,327 DEBUG 'gir1.2-goa-1.0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:52,548 DEBUG package 'gettext' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:53,803 DEBUG 'gettext' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:53,908 DEBUG package 'libtsan0' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:55,123 DEBUG 'libtsan0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:55,228 DEBUG package 'libfile-copy-recursive-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:56,488 DEBUG 'libfile-copy-recursive-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:56,594 DEBUG package 'libxml-simple-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:57,998 DEBUG 'libxml-simple-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:58,105 DEBUG package 'netpbm' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:06:59,385 DEBUG 'netpbm' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:06:59,492 DEBUG package 'enchant' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:00,749 DEBUG 'enchant' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:00,971 DEBUG package 'linux-headers-5.4.0-113' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:02,225 DEBUG 'linux-headers-5.4.0-113' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:02,447 DEBUG package 'libisccc160' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:03,679 DEBUG 'libisccc160' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:03,784 DEBUG package 'libmoo-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:05,044 DEBUG 'libmoo-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:05,149 DEBUG package 'libhogweed4' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:06,387 DEBUG 'libhogweed4' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:06,491 DEBUG package 'libstdc++-9-dev' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:07,751 DEBUG 'libstdc++-9-dev' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:07,855 DEBUG package 'python3-asn1crypto' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:09,139 DEBUG 'python3-asn1crypto' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:09,245 DEBUG package 'libemail-valid-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:10,492 DEBUG 'libemail-valid-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:10,597 DEBUG package 'libqpdf21' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:11,846 DEBUG 'libqpdf21' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:12,068 DEBUG package 'libpython2.7-minimal' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:13,388 DEBUG 'libpython2.7-minimal' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:13,495 DEBUG package 'libgmime-3.0-0' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:14,709 DEBUG 'libgmime-3.0-0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:14,814 DEBUG package 'python3-zope.interface' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:16,074 DEBUG 'python3-zope.interface' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:16,179 DEBUG package 'libpackage-stash-xs-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:17,405 DEBUG 'libpackage-stash-xs-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:17,406 DEBUG skipping kernel metapackage 'linux-generic'
+2024-05-17 13:07:17,406 DEBUG 'linux-generic' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:17,511 DEBUG package 'libntfs-3g88' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:18,726 DEBUG 'libntfs-3g88' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:18,830 DEBUG package 'libio-async-loop-epoll-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:20,102 DEBUG 'libio-async-loop-epoll-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:20,207 DEBUG package 'libref-util-xs-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:21,433 DEBUG 'libref-util-xs-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:21,538 DEBUG package 'libpath-tiny-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:22,765 DEBUG 'libpath-tiny-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:22,870 DEBUG package 'gir1.2-mutter-2' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:24,141 DEBUG 'gir1.2-mutter-2' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:24,247 DEBUG package 'libexiv2-14' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:25,517 DEBUG 'libexiv2-14' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:25,623 DEBUG package 'libmozjs-52-0' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:26,849 DEBUG 'libmozjs-52-0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:27,075 DEBUG package 'libncursesw5' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:28,303 DEBUG 'libncursesw5' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:28,527 DEBUG package 'libdevel-callchecker-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:29,768 DEBUG 'libdevel-callchecker-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:29,994 DEBUG package 'libmodule-runtime-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:31,310 DEBUG 'libmodule-runtime-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:31,417 DEBUG package 'libart-2.0-2' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:32,708 DEBUG 'libart-2.0-2' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:32,817 DEBUG package 'libnamespace-clean-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:34,106 DEBUG 'libnamespace-clean-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:34,213 DEBUG package 'libjson-maybexs-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:35,426 DEBUG 'libjson-maybexs-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:35,531 DEBUG package 'libnss-myhostname' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:36,815 DEBUG 'libnss-myhostname' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:37,039 DEBUG package 'libmutter-2-0' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:38,269 DEBUG 'libmutter-2-0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:38,492 DEBUG package 'libisc-export169' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:39,867 DEBUG 'libisc-export169' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:39,972 DEBUG package 'libvpx5' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:41,210 DEBUG 'libvpx5' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:41,458 DEBUG package 'libb-hooks-op-check-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:42,674 DEBUG 'libb-hooks-op-check-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:42,780 DEBUG package 'libparse-debianchangelog-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:44,017 DEBUG 'libparse-debianchangelog-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:44,242 DEBUG package 'imagemagick-6-common' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:45,471 DEBUG 'imagemagick-6-common' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:45,693 DEBUG package 'libopenexr24' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:47,013 DEBUG 'libopenexr24' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:47,118 DEBUG package 'libllvm10' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:48,333 DEBUG 'libllvm10' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:48,559 DEBUG package 'libnetpbm10' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:49,809 DEBUG 'libnetpbm10' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:49,916 DEBUG package 'libc-dev-bin' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:51,119 DEBUG 'libc-dev-bin' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:51,340 DEBUG package 'libcgi-pm-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:52,606 DEBUG 'libcgi-pm-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:52,710 DEBUG package 'libbind9-160' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:53,948 DEBUG 'libbind9-160' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:54,056 DEBUG package 'libmodule-implementation-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:55,324 DEBUG 'libmodule-implementation-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:55,548 DEBUG package 'libio-pty-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:56,789 DEBUG 'libio-pty-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:56,894 DEBUG package 'python3-oauth' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:58,110 DEBUG 'python3-oauth' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:58,215 DEBUG package 'imagemagick' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:07:59,432 DEBUG 'imagemagick' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:07:59,538 DEBUG package 'libapt-pkg-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:00,763 DEBUG 'libapt-pkg-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:00,990 DEBUG package 'liblqr-1-0' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:02,284 DEBUG 'liblqr-1-0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:02,388 DEBUG package 'libperl4-corelibs-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:03,615 DEBUG 'libperl4-corelibs-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:03,721 DEBUG package 'printer-driver-gutenprint' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:05,025 DEBUG 'printer-driver-gutenprint' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:05,132 DEBUG package 'liblist-moreutils-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:06,400 DEBUG 'liblist-moreutils-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:06,506 DEBUG package 'libecal-1.2-19' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:07,776 DEBUG 'libecal-1.2-19' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:07,999 DEBUG package 'libfcgi-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:09,219 DEBUG 'libfcgi-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:09,323 DEBUG package 'xserver-xorg-video-intel-hwe-18.04' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:10,539 DEBUG 'xserver-xorg-video-intel-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:10,646 DEBUG package 'gcc-8-base' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:11,893 DEBUG 'gcc-8-base' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:11,999 DEBUG package 'xserver-xorg-video-vmware-hwe-18.04' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:13,225 DEBUG 'xserver-xorg-video-vmware-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:13,331 DEBUG package 'libtest-fatal-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:14,579 DEBUG 'libtest-fatal-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:14,684 DEBUG package 'libalgorithm-diff-xs-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:15,921 DEBUG 'libalgorithm-diff-xs-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:16,027 DEBUG package 'libboost-date-time1.65.1' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:17,275 DEBUG 'libboost-date-time1.65.1' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:17,380 DEBUG package 'libisl19' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:18,651 DEBUG 'libisl19' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:18,757 DEBUG package 'libipc-run-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:19,971 DEBUG 'libipc-run-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:20,193 DEBUG package 'libgnome-desktop-3-17' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:21,414 DEBUG 'libgnome-desktop-3-17' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:21,639 DEBUG package 'libnet-dns-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:22,901 DEBUG 'libnet-dns-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:23,124 DEBUG package 'libpython3.6-minimal' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:24,388 DEBUG 'libpython3.6-minimal' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:24,611 DEBUG package 'liblouis14' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:25,908 DEBUG 'liblouis14' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:26,131 DEBUG package 'libnettle6' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:27,350 DEBUG 'libnettle6' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:27,456 DEBUG package 'libebook-contacts-1.2-2' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:28,704 DEBUG 'libebook-contacts-1.2-2' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:28,810 DEBUG package 'g++-9' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:30,025 DEBUG 'g++-9' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:30,130 DEBUG package 'libquadmath0' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:31,434 DEBUG 'libquadmath0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:31,540 DEBUG package 'fakeroot' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:32,810 DEBUG 'fakeroot' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:32,916 DEBUG package 'libdevel-size-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:34,142 DEBUG 'libdevel-size-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:34,364 DEBUG package 'ifupdown' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:35,606 DEBUG 'ifupdown' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:35,711 DEBUG package 'libb-hooks-endofscope-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:37,051 DEBUG 'libb-hooks-endofscope-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:37,158 DEBUG package 'libtype-tiny-xs-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:38,438 DEBUG 'libtype-tiny-xs-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:38,544 DEBUG package 'libedataserver-1.2-23' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:39,781 DEBUG 'libedataserver-1.2-23' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:39,886 DEBUG package 'liblwres160' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:41,134 DEBUG 'liblwres160' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:41,239 DEBUG package 'build-essential' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:42,499 DEBUG 'build-essential' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:42,605 DEBUG package 'xserver-xorg-input-libinput-hwe-18.04' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:43,886 DEBUG 'xserver-xorg-input-libinput-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:44,109 DEBUG package 'liblinux-epoll-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:45,351 DEBUG 'liblinux-epoll-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:45,458 DEBUG package 'ureadahead' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:46,716 DEBUG 'ureadahead' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:46,823 DEBUG package 'gcc-9' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:48,092 DEBUG 'gcc-9' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:48,315 DEBUG package 'binutils' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:49,534 DEBUG 'binutils' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:49,639 DEBUG package 'manpages-dev' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:50,899 DEBUG 'manpages-dev' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:51,122 DEBUG package 'libalgorithm-diff-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:52,342 DEBUG 'libalgorithm-diff-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:52,449 DEBUG package 'g++' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:53,662 DEBUG 'g++' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:53,766 DEBUG package 'xserver-xorg-input-all-hwe-18.04' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:54,994 DEBUG 'xserver-xorg-input-all-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:55,098 DEBUG package 'pppoeconf' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:56,314 DEBUG 'pppoeconf' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:56,419 DEBUG package 'qpdf' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:57,670 DEBUG 'qpdf' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:57,778 DEBUG package 'libmagickcore-6.q16-3-extra' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:08:59,033 DEBUG 'libmagickcore-6.q16-3-extra' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:08:59,136 DEBUG package 'example-content' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:00,397 DEBUG 'example-content' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:00,503 DEBUG package 'geoip-database' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:01,751 DEBUG 'geoip-database' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:01,857 DEBUG package 'libpoppler73' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:03,150 DEBUG 'libpoppler73' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:03,257 DEBUG package 'liboauth0' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:04,481 DEBUG 'liboauth0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:04,602 DEBUG package 'libitm1' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:05,802 DEBUG 'libitm1' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:06,023 DEBUG package 'libboost-iostreams1.65.1' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:07,279 DEBUG 'libboost-iostreams1.65.1' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:07,387 DEBUG package 'linux-hwe-5.4-headers-5.4.0-81' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:08,598 DEBUG 'linux-hwe-5.4-headers-5.4.0-81' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:08,702 DEBUG package 'libyaml-libyaml-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:09,919 DEBUG 'libyaml-libyaml-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:10,023 DEBUG package 'linux-headers-generic-hwe-18.04' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:11,250 DEBUG 'linux-headers-generic-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:11,355 DEBUG package 'libgcc-9-dev' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:12,582 DEBUG 'libgcc-9-dev' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:12,803 DEBUG package 'libmagickwand-6.q16-3' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:14,035 DEBUG 'libmagickwand-6.q16-3' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:14,141 DEBUG package 'xserver-xorg-video-amdgpu-hwe-18.04' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:15,356 DEBUG 'xserver-xorg-video-amdgpu-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:15,581 DEBUG package 'libctf0' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:16,798 DEBUG 'libctf0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:17,020 DEBUG package 'libzeitgeist-2.0-0' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:18,241 DEBUG 'libzeitgeist-2.0-0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:18,465 DEBUG package 'libfftw3-double3' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:19,705 DEBUG 'libfftw3-double3' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:19,942 DEBUG package 'linux-modules-5.4.0-113-generic' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:21,237 DEBUG 'linux-modules-5.4.0-113-generic' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:21,342 DEBUG package 'multiarch-support' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:22,580 DEBUG 'multiarch-support' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:22,803 DEBUG package 'libsereal-encoder-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:24,100 DEBUG 'libsereal-encoder-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:24,323 DEBUG package 'libgutenprint9' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:25,553 DEBUG 'libgutenprint9' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:25,658 DEBUG package 'libsane1' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:26,885 DEBUG 'libsane1' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:27,114 DEBUG package 'linux-image-5.4.0-113-generic' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:28,338 DEBUG 'linux-image-5.4.0-113-generic' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:28,567 DEBUG package 'libdigest-hmac-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:29,814 DEBUG 'libdigest-hmac-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:29,919 DEBUG package 'xserver-xorg-core-hwe-18.04' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:31,135 DEBUG 'xserver-xorg-core-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:31,239 DEBUG package 'libreoffice-avmedia-backend-gstreamer' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:32,488 DEBUG 'libreoffice-avmedia-backend-gstreamer' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:32,713 DEBUG package 'libffi6' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:33,953 DEBUG 'libffi6' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:34,175 DEBUG package 'libsereal-decoder-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:35,461 DEBUG 'libsereal-decoder-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:35,568 DEBUG package 'libsub-quote-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:36,772 DEBUG 'libsub-quote-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:36,877 DEBUG package 'libgail-3-0' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:38,082 DEBUG 'libgail-3-0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:38,186 DEBUG package 'libsub-identify-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:39,413 DEBUG 'libsub-identify-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:39,518 DEBUG package 'xserver-xorg-video-nouveau-hwe-18.04' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:40,745 DEBUG 'xserver-xorg-video-nouveau-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:40,850 DEBUG package 't1utils' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:42,077 DEBUG 't1utils' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:42,182 DEBUG package 'xserver-xorg-video-fbdev-hwe-18.04' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:43,410 DEBUG 'xserver-xorg-video-fbdev-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:43,635 DEBUG package 'libgdbm5' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:44,875 DEBUG 'libgdbm5' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:45,096 DEBUG package 'libsub-name-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:46,317 DEBUG 'libsub-name-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:46,422 DEBUG package 'ubuntu-wallpapers-bionic' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:47,638 DEBUG 'ubuntu-wallpapers-bionic' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:47,861 DEBUG package 'libparams-classify-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:49,102 DEBUG 'libparams-classify-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:49,207 DEBUG package 'libgutenprint2' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:50,434 DEBUG 'libgutenprint2' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:50,539 DEBUG package 'libfile-find-rule-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:51,839 DEBUG 'libfile-find-rule-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:52,062 DEBUG package 'libcroco3' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:53,297 DEBUG 'libcroco3' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:53,516 DEBUG package 'adium-theme-ubuntu' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:54,740 DEBUG 'adium-theme-ubuntu' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:54,967 DEBUG package 'binutils-common' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:56,182 DEBUG 'binutils-common' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:56,287 DEBUG package 'ubuntu-software' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:57,514 DEBUG 'ubuntu-software' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:57,618 DEBUG package 'libargon2-0' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:09:58,823 DEBUG 'libargon2-0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:09:58,927 DEBUG package 'libtext-levenshtein-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:00,166 DEBUG 'libtext-levenshtein-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:00,272 DEBUG package 'ubuntu-artwork' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:01,497 DEBUG 'ubuntu-artwork' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:01,604 DEBUG package 'python3-crypto' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:02,840 DEBUG 'python3-crypto' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:02,946 DEBUG package 'gnome-user-guide' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:04,161 DEBUG 'gnome-user-guide' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:04,384 DEBUG package 'libgeoip1' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:05,603 DEBUG 'libgeoip1' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:05,825 DEBUG package 'libio-string-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:07,046 DEBUG 'libio-string-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:07,152 DEBUG package 'libboost-locale1.65.1' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:08,366 DEBUG 'libboost-locale1.65.1' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:08,588 DEBUG package 'libjson-c3' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:09,809 DEBUG 'libjson-c3' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:09,913 DEBUG package 'liborcus-0.13-0' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:11,140 DEBUG 'liborcus-0.13-0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:11,362 DEBUG package 'libtinfo5' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:12,583 DEBUG 'libtinfo5' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:12,687 DEBUG package 'pppconfig' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:13,903 DEBUG 'pppconfig' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:14,007 DEBUG package 'libcgi-fast-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:15,224 DEBUG 'libcgi-fast-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:15,448 DEBUG package 'libio-async-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:16,677 DEBUG 'libio-async-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:16,782 DEBUG package 'diffstat' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:18,142 DEBUG 'diffstat' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:18,247 DEBUG package 'libxml-sax-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:19,474 DEBUG 'libxml-sax-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:19,578 DEBUG package 'libxml-libxml-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:20,783 DEBUG 'libxml-libxml-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:20,888 DEBUG package 'libclone-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:22,092 DEBUG 'libclone-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:22,314 DEBUG package 'libxapian30' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:23,523 DEBUG 'libxapian30' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:23,746 DEBUG package 'libgutenprint-common' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:24,966 DEBUG 'libgutenprint-common' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:25,071 DEBUG package 'libgweather-3-15' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:26,298 DEBUG 'libgweather-3-15' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:26,402 DEBUG package 'libsereal-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:27,618 DEBUG 'libsereal-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:27,840 DEBUG package 'libisccfg160' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:29,061 DEBUG 'libisccfg160' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:29,167 DEBUG package 'linux-libc-dev' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:30,404 DEBUG 'linux-libc-dev' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:30,509 DEBUG package 'libmoox-aliases-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:31,724 DEBUG 'libmoox-aliases-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:31,946 DEBUG package 'libmagickcore-6.q16-3' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:33,200 DEBUG 'libmagickcore-6.q16-3' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:33,306 DEBUG package 'linux-hwe-5.4-headers-5.4.0-72' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:34,532 DEBUG 'linux-hwe-5.4-headers-5.4.0-72' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:34,763 DEBUG package 'libisc169' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:35,985 DEBUG 'libisc169' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:36,090 DEBUG package 'libiptc0' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:37,306 DEBUG 'libiptc0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:37,412 DEBUG package 'libxml-writer-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:38,637 DEBUG 'libxml-writer-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:38,858 DEBUG package 'libnet-domain-tld-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:40,080 DEBUG 'libnet-domain-tld-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:40,185 DEBUG package 'libip6tc0' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:41,422 DEBUG 'libip6tc0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:41,529 DEBUG package 'libcapture-tiny-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:42,754 DEBUG 'libcapture-tiny-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:42,858 DEBUG package 'linux-modules-extra-5.4.0-113-generic' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:44,086 DEBUG 'linux-modules-extra-5.4.0-113-generic' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:44,190 DEBUG package 'linux-hwe-5.4-headers-5.4.0-58' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:45,417 DEBUG 'linux-hwe-5.4-headers-5.4.0-58' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:45,524 DEBUG package 'libpython3.6' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:46,760 DEBUG 'libpython3.6' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:46,867 DEBUG package 'xserver-xorg-video-qxl-hwe-18.04' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:48,102 DEBUG 'xserver-xorg-video-qxl-hwe-18.04' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:48,207 DEBUG package 'linux-hwe-5.4-headers-5.4.0-104' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:49,423 DEBUG 'linux-hwe-5.4-headers-5.4.0-104' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:49,646 DEBUG package 'libreadline7' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:50,877 DEBUG 'libreadline7' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:51,099 DEBUG package 'libtext-glob-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:52,330 DEBUG 'libtext-glob-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:52,435 DEBUG package 'libarchive-zip-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:53,686 DEBUG 'libarchive-zip-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:53,915 DEBUG package 'libnet-ip-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:55,151 DEBUG 'libnet-ip-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:55,256 DEBUG package 'libhunspell-1.6-0' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:56,493 DEBUG 'libhunspell-1.6-0' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:56,599 DEBUG package 'libnet-dns-sec-perl' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:57,836 DEBUG 'libnet-dns-sec-perl' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:58,060 DEBUG package 'libboost-filesystem1.65.1' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:10:59,301 DEBUG 'libboost-filesystem1.65.1' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:10:59,406 DEBUG package 'libplymouth4' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:11:00,643 DEBUG 'libplymouth4' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:11:00,873 DEBUG package 'libbinutils' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:11:02,097 DEBUG 'libbinutils' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:11:02,202 DEBUG package 'libgtksourceview-3.0-1' produces an unwanted removal 'gnome-software-plugin-snap', skipping
+2024-05-17 13:11:03,451 DEBUG 'libgtksourceview-3.0-1' scheduled for remove but not safe to remove, skipping
+2024-05-17 13:11:03,451 DEBUG Finish checking for obsolete pkgs
+2024-05-17 13:11:03,512 DEBUG The following packages are marked for removal: libpackage-stash-perl libmoox-aliases-perl libmoo-perl libcpanel-json-xs-perl libxml-sax-base-perl libc6-dev gnome-software-plugin-snap libxml-sax-perl ubuntu-system-service libb-hooks-endofscope-perl iputils-arping gnome-software g++ patchutils libncurses5 gcc libperlio-gzip-perl libasan5 libprocps6 fwupdate libminiupnpc10 libunicode-utf8-perl libjson-xs-perl libstdc++-9-dev build-essential nplan libreoffice-style-galaxy linux-hwe-5.4-headers-5.4.0-150 libcrypt-dev libubsan1 g++-9 ubuntu-software gir1.2-gtksource-3.0 librole-tiny-perl guile-2.0-libs gcc-9 libnamespace-clean-perl lintian libreadonly-perl libtypes-serialiser-perl libgspell-1-1 mlocate libcommon-sense-perl libxml-libxml-perl gsfonts python3-keyrings.alt libebook-contacts-1.2-2 libxml-sax-expat-perl libsub-exporter-progressive-perl libcamel-1.2-61 libecal-1.2-19 libip4tc0 libedataserver-1.2-23 libjson-maybexs-perl libgcc-9-dev libxml-simple-perl
+2024-05-17 13:13:59,584 INFO cache.commit()
+2024-05-17 13:15:39,928 DEBUG quirks: running PostCleanup
+2024-05-17 13:15:39,929 DEBUG running Quirks.PostCleanup
+2024-05-17 13:15:39,929 DEBUG _fipsLibgcryptHmacCleanup
+2024-05-17 13:15:39,929 DEBUG System is not fips enabled, no need for hmac tidy
+2024-05-17 13:15:39,940 DEBUG Running PostInstallScript: './xorg_fix_proprietary.py'
+2024-05-17 13:15:40,050 DEBUG Running PostInstallScript: '/usr/lib/ubuntu-advantage/convert_list_to_deb822.py'
+2024-05-17 13:15:41,090 DEBUG Running PostInstallScript: '/usr/lib/ubuntu-advantage/upgrade_lts_contract.py'
