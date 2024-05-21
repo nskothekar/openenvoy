@@ -1,0 +1,8 @@
+2024-05-17 11:02:05,567 WARNING - Unattended-upgrade in progress during shutdown, please don't turn off the computer
+2024-05-17 11:02:08,567 WARNING - Unattended-upgrade in progress during shutdown, please don't turn off the computer
+2024-05-17 11:02:11,570 WARNING - Unattended-upgrade in progress during shutdown, please don't turn off the computer
+2024-05-17 11:02:14,571 WARNING - Unattended-upgrade in progress during shutdown, please don't turn off the computer
+2024-05-17 11:02:17,575 INFO - All upgrades installed
+2024-05-17 11:39:34,644 WARNING - SIGTERM or SIGHUP received, stopping unattended-upgradesonly if it is running
+2024-05-17 13:16:02,528 WARNING - SIGTERM or SIGHUP received, stopping unattended-upgradesonly if it is running
+2024-05-18 21:21:07,637 WARNING - SIGTERM or SIGHUP received, stopping unattended-upgrades only if it is running
